@@ -1,16 +1,16 @@
 <header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(3,22,51,0.06)]">
   <div class="h-20 max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between">
-    <div class="flex items-center lg:gap-space-lg xl:gap-16">
+    <div class="flex items-center gap-space-sm lg:gap-space-md xl:gap-space-lg min-w-0">
       <div class="flex items-center gap-space-md shrink-0">
         <a href="{{ "" | relURL }}">
           {{ partial "logo.html" (dict "class" "h-9 w-auto") }}
         </a>
-        <div class="hidden sm:flex flex-col">
-          <span class="font-headline-sm text-headline-sm text-primary tracking-normal leading-tight">{{ hugo.Data.site.header.title }}</span>
-          <span class="font-label-uppercase text-label-uppercase text-secondary tracking-widest uppercase">{{ hugo.Data.site.header.subtitle }}</span>
+        <div class="hidden sm:flex flex-col min-w-0">
+          <span class="font-headline-sm text-headline-sm text-primary tracking-normal leading-tight truncate">{{ hugo.Data.site.header.title }}</span>
+          <span class="font-label-uppercase text-label-uppercase text-secondary tracking-widest uppercase truncate">{{ hugo.Data.site.header.subtitle }}</span>
         </div>
       </div>
-      <nav class="hidden lg:flex items-center gap-space-md xl:gap-space-lg">
+      <nav class="hidden lg:flex items-center gap-space-xs lg:gap-space-sm xl:gap-space-md shrink-0">
         <a class="{{ if .IsHome }}transition-colors underline-offset-8 decoration-secondary decoration-2 hover:underline bg-primary-container text-on-primary font-label-md rounded px-space-md py-space-xs shadow-[0_1px_4px_rgba(26,43,73,0.12)]{{ else }}font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors underline-offset-8 decoration-secondary decoration-2 hover:underline{{ end }}" href="{{ "" | relURL }}">About</a>
         <a class="{{ if eq .Section "research" }}transition-colors underline-offset-8 decoration-secondary decoration-2 hover:underline bg-primary-container text-on-primary font-label-md rounded px-space-md py-space-xs shadow-[0_1px_4px_rgba(26,43,73,0.12)]{{ else }}font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors underline-offset-8 decoration-secondary decoration-2 hover:underline{{ end }}" href="{{ "research/" | relURL }}">Research</a>
         <a class="{{ if eq .Section "publications" }}transition-colors underline-offset-8 decoration-secondary decoration-2 hover:underline bg-primary-container text-on-primary font-label-md rounded px-space-md py-space-xs shadow-[0_1px_4px_rgba(26,43,73,0.12)]{{ else }}font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors underline-offset-8 decoration-secondary decoration-2 hover:underline{{ end }}" href="{{ "publications/" | relURL }}">Publications</a>
@@ -18,7 +18,7 @@
         <a class="{{ if eq .Section "students-and-lab" }}transition-colors underline-offset-8 decoration-secondary decoration-2 hover:underline bg-primary-container text-on-primary font-label-md rounded px-space-md py-space-xs shadow-[0_1px_4px_rgba(26,43,73,0.12)]{{ else }}font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors underline-offset-8 decoration-secondary decoration-2 hover:underline{{ end }}" href="{{ "students-and-lab/" | relURL }}">Students</a>
       </nav>
     </div>
-    <div class="flex items-center shrink-0 ml-auto pl-space-md lg:pl-space-xl">
+    <div class="flex items-center shrink-0 ml-auto pl-space-sm lg:pl-space-md xl:pl-space-lg">
       <a class="hidden md:inline-flex items-center font-label-md text-label-md px-space-md py-space-xs bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary rounded shadow-[0_1px_4px_rgba(26,43,73,0.12)] transition-all" href="{{ hugo.Data.site.header.contact_link | relURL }}">{{ hugo.Data.site.header.contact_btn }}</a>
     </div>
   </div>
