@@ -1,0 +1,149 @@
+[
+  {
+    "type": "phd",
+    "name": "Maya Lin-Ramirez",
+    "status": "4th Year Candidate",
+    "graduation": "Autumn 2025",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCc5Xzjkfh0MTEsFbov613iWLqvuns5gaDBng0DAXOJE-p1rdWwvJz-DvGvYDQGnKAcGL3W9mNvPqz6Qu6xX969daQkhuMdGVqat204CVtSeNXE4B0RMVG9dTqQ30gKMOI2cZmzyUMO4OCTDyVYxntvP9smdtuB0aXNKkdYWJzgkfeUej6yIU4Ucn5UdxUDAiXHqjd0tA_c-6qfeb-DSRv7WYOz3p0p_b6z8who3wph_WezmuFTyF0",
+    "treatise": "“Causal Reasoning and Counterfactual Invariance in Multi-Agent Neural Interaction Dynamics”",
+    "description": "Solely advised. Recipient of Stanford Graduate Fellowship in Science & Engineering and Meta Ph.D. Fellowship Finalist.",
+    "links": {
+      "site": "#",
+      "scholar": "#"
+    },
+    "room": "Gates 420B"
+  },
+  {
+    "type": "phd",
+    "name": "Arthur Pendelton",
+    "status": "3rd Year Candidate",
+    "graduation": "2026",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuC4CHOXJQdyXiI5dWgq3GYmLp2YYqijzVgb_ZotcJwIR5KELlrROTSl8FN7qkHhnrveIwgMDzFX4_nsg59wD22XUyVe1e0CVclWt9oP0D9yWTM2ABFR-tAKneWWh-nCin8aHFKxab4zVnr2WvIbKoq5eJowzZRuhZlQwvJrU46nK0BloeA3xhz-FVPkV9D9DZ_w9qcaAsLnYrLlqdV_iNdA31altFmoQhitthPMO4wBgvsW1kI5Ayo",
+    "treatise": "“Algorithmic Auditing and Statistical Rigor in Large-Scale Public Welfare Deployments”",
+    "description": "Co-advised with <span class=\"text-primary font-medium\">Prof. R. Calo</span> (Stanford Law / HAI). Focus on societal governance of autonomous allocation mechanisms.",
+    "links": {
+      "site": "#",
+      "github": "#"
+    },
+    "room": "Gates 422"
+  },
+  {
+    "type": "phd",
+    "name": "Sarah Al-Mansoor",
+    "status": "2nd Year Candidate",
+    "graduation": "2027",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDc__-74fKAkmPjgAU8eQoragJh4ypdjWSF0oTUEqqQtkiz5nKRVZY-XzliiKpS80hFx3-exoxDg0d2ro0SGarpYSFns2blgIqRO2lhJo5aTCs8fZAf-D2dLigKRHFPnUn1J4bybhN_oHMLncNImswi-svIk7149lba_-RqRLkdlRt_ChSSiNpDr98uq8_EY745gqnWJQiPb2nyaC5VcTPaHtmdFc-sBOXGSfGxoRxKg5Nz3Ee78OY",
+    "treatise": "“Neuro-symbolic Knowledge Synthesis and Automated Theorem Proving via Logic Constraints”",
+    "description": "Solely advised. Recipient of the King Abdullah Graduate Fellowship and Stanford Engineering Fellowship.",
+    "links": {
+      "site": "#",
+      "scholar": "#"
+    },
+    "room": "Gates 420A"
+  },
+  {
+    "type": "postdoc",
+    "name": "Dr. Priya Ramanathan",
+    "role": "Postdoctoral Research Fellow",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDxJLbB_SM9f35fi0z1Z_Qb9lH6Ir5eSLtArPoMEk7UstITJagKL57Z40--jMLjzAJZX4fql5mFVHzvsIP1Gv_GW2BWPQ9VTkfG-A1l2la6f5mhz7OuoFOHIrYunX14p2DmQV0zFSA-UGNjVp8H-jkVVXlT4jJOzgPJwEW8Xu4XABhwdZbHjBFF3vHrrG_U7S3FTJw42XoLkUvPofN_b2gLXVtjzbFMAFqg6WeJMFNYncYkYqmFSbk",
+    "image_alt": "Portrait of Dr. Priya Ramanathan, postdoctoral fellow, framed in classical library lighting, book shelves in soft bokeh background, elegant academic attire, professional scholarly appearance.",
+    "education": "Ph.D. Massachusetts Institute of Technology, EECS • Advised jointly with HAI",
+    "description": "Research Focus: <span class=\"text-on-surface font-medium\">Interpretable Generative Architectures &amp; Provably Fair Latent Trajectories.</span> Currently co-directing our DARPA-sponsored verification protocol testbed and mentoring graduate thesis writers.",
+    "links": [
+      {
+        "url": "#",
+        "text": "Contact Fellow",
+        "icon": "mail",
+        "type": "primary"
+      },
+      {
+        "url": "#",
+        "text": "View Monograph Offprints →",
+        "type": "secondary"
+      }
+    ]
+  },
+  {
+    "type": "undergrad",
+    "name": "Elena Rostova",
+    "badge1": "Terman Awardee • B.S. Honors ’24",
+    "badge2": "Now at Oxford (Rhodes)",
+    "treatise": "“Topological Invariants in Discrete Latent State Formulations”",
+    "description": "Awarded the <span class=\"font-medium text-primary\">Firestone Medal for Excellence in Undergraduate Research</span>. Work presented as an oral presentation at NeurIPS 2024.",
+    "links": [
+      {
+        "url": "#",
+        "text": "Read Award-Winning Honors Monograph (PDF) →"
+      }
+    ]
+  },
+  {
+    "type": "undergrad",
+    "name": "Marcus H. Vance-Kao",
+    "badge1": "M.S. Thesis Defense • Winter ’24",
+    "badge2": "Now at Anthropic",
+    "treatise": "“Empirical Verification of Bounded Invariants in High-Throughput Model Serving”",
+    "description": "Advised in collaboration with the Stanford Secure Systems Group. Open-source verification harness adopted by over 20 international labs.",
+    "links": [
+      {
+        "url": "#",
+        "text": "Access Codebase &amp; Thesis Archive →"
+      }
+    ]
+  },
+  {
+    "type": "alumni",
+    "name": "Dr. Clarissa Sterling",
+    "award": "NSF Fellow",
+    "year": "2023",
+    "dissertation": "“Certified Robustness for Continuous-State Dynamic Systems”",
+    "doi_link": "#",
+    "first_placement": "Postdoc, Princeton University",
+    "current_post": "Assistant Professor, UC Berkeley (EECS)",
+    "current_post_icon": "school"
+  },
+  {
+    "type": "alumni",
+    "name": "Dr. Nathanial C. Drake",
+    "award": "ACM SIGPLAN Awardee",
+    "year": "2021",
+    "dissertation": "“Symbolic SMT Reductions for Neural Circuit Analysis”",
+    "doi_link": "#",
+    "first_placement": "Senior Scientist, DeepMind London",
+    "current_post": "Research Scientist, Google DeepMind",
+    "current_post_icon": "terminal"
+  },
+  {
+    "type": "alumni",
+    "name": "Dr. Evelyn Wu",
+    "award": "Best Thesis Nominee",
+    "year": "2020",
+    "dissertation": "“Formal Guarantees in Adversarial Multi-Agent Reinforcement Learning”",
+    "doi_link": "#",
+    "first_placement": "Tenure-track Faculty, Cornell Univ.",
+    "current_post": "Tenured Associate Professor, Cornell Tech",
+    "current_post_icon": "school"
+  },
+  {
+    "type": "alumni",
+    "name": "Dr. Jonathan K. Mercer",
+    "award": "Hertz Fellow",
+    "year": "2018",
+    "dissertation": "“Algorithmic Game Theory in Scalable Distributed Computation Pools”",
+    "doi_link": "#",
+    "first_placement": "Member of Technical Staff, OpenAI",
+    "current_post": "Principal Scientist, OpenAI Alignment",
+    "current_post_icon": "biotech"
+  },
+  {
+    "type": "alumni",
+    "name": "Dr. Aïcha Diallo",
+    "award": "Forsythe Thesis Award",
+    "year": "2016",
+    "dissertation": "“Verified Compilers for Distributed Probabilistic Programming Languages”",
+    "doi_link": "#",
+    "first_placement": "Assistant Professor, Oxford University",
+    "current_post": "Full Professor & Chair, ETH Zürich",
+    "current_post_icon": "school"
+  }
+]

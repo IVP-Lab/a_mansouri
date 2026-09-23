@@ -1,0 +1,321 @@
+{{ define "main" }}
+<!-- Top Academic Dossier Header -->
+<section class="w-full bg-surface-container-low py-space-xl">
+  <div class="max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+      <div class="max-w-3xl space-y-space-sm">
+        <div class="flex items-center gap-space-sm">
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface text-secondary font-label-uppercase text-label-uppercase tracking-widest shadow-sm">
+            <span class="material-symbols-outlined text-[14px]">groups</span>
+            {{ .Params.subtitle }}
+          </span>
+          <span class="text-outline-variant font-label-uppercase text-label-uppercase">•</span>
+          <span class="font-label-uppercase text-label-uppercase text-on-surface-variant tracking-wider">{{ .Params.year }}</span>
+        </div>
+        <h1 class="font-display-hero text-display-hero text-primary font-medium tracking-tight">
+          {{ .Title }}
+        </h1>
+        <p class="font-quote-scholarly text-quote-scholarly text-on-surface-variant italic leading-relaxed">
+          {{ .Params.quote }}
+        </p>
+      </div>
+
+      <!-- Metric strip -->
+      <div class="flex items-center gap-space-md p-space-md bg-surface rounded-xl shadow-sm self-start lg:self-auto">
+        {{ $statsLen := len .Params.stats }}
+        {{ range $index, $stat := .Params.stats }}
+        <div class="px-space-sm py-space-xs text-center">
+          <span class="block font-headline-md text-headline-md text-{{ .color }} font-semibold">{{ .value }}</span>
+          <span class="font-label-uppercase text-label-uppercase text-on-surface-variant">{{ .label }}</span>
+        </div>
+        {{ if ne (add $index 1) $statsLen }}
+        <div class="w-px h-10 bg-surface-container-highest"></div>
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Main Editorial Canvas -->
+<div class="max-w-[1280px] mx-auto w-full px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl space-y-space-xl">
+  
+  <!-- Section 1: Current Ph.D. Advisees -->
+  <section class="space-y-space-lg">
+    <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-space-xs pb-space-sm">
+      <div>
+        <span class="font-label-uppercase text-label-uppercase text-secondary tracking-widest uppercase block">{{ .Params.sections.phd_advisees.label }}</span>
+        <h2 class="font-headline-lg text-headline-lg text-primary">{{ .Params.sections.phd_advisees.title }}</h2>
+      </div>
+      <p class="font-body-sm text-body-sm text-on-surface-variant">
+        {{ .Params.sections.phd_advisees.description }}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+      {{ range where hugo.Data.students "type" "phd" }}
+      <article class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+        <div class="space-y-space-md">
+          <div class="flex items-start gap-space-md">
+            <img class="w-20 h-20 rounded object-cover shadow-sm flex-shrink-0" src="{{ .image }}">
+            <div class="space-y-1 min-w-0">
+              <span class="inline-block px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-uppercase text-label-uppercase tracking-wider">
+                {{ .status }}
+              </span>
+              <h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">{{ .name }}</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">{{ $.Params.sections.phd_advisees.labels.exp_graduation }} {{ .graduation }}</p>
+            </div>
+          </div>
+          <div class="space-y-space-xs pt-space-xs">
+            <span class="font-label-uppercase text-label-uppercase text-outline tracking-wider block">{{ $.Params.sections.phd_advisees.labels.treatise }}</span>
+            <p class="font-headline-sm text-[17px] leading-snug text-primary font-medium">
+              {{ .treatise }}
+            </p>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">
+            {{ .description | safeHTML }}
+          </p>
+        </div>
+        <div class="pt-space-md mt-space-md flex items-center justify-between">
+          <div class="flex items-center gap-space-sm">
+            {{ if .links.site }}
+            <a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-secondary transition-colors" href="{{ .links.site }}">
+              <span class="material-symbols-outlined text-[16px]">public</span> {{ $.Params.sections.phd_advisees.labels.site }}
+            </a>
+            {{ end }}
+            
+            {{ if and .links.site .links.scholar }}
+            <span class="text-outline-variant">•</span>
+            {{ end }}
+            
+            {{ if and .links.site (not .links.scholar) .links.github }}
+            <span class="text-outline-variant">•</span>
+            {{ end }}
+            
+            {{ if .links.scholar }}
+            <a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-secondary transition-colors" href="{{ .links.scholar }}">
+              <span class="material-symbols-outlined text-[16px]">school</span> {{ $.Params.sections.phd_advisees.labels.scholar }}
+            </a>
+            {{ end }}
+            
+            {{ if .links.github }}
+            <a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-secondary transition-colors" href="{{ .links.github }}">
+              <span class="material-symbols-outlined text-[16px]">code</span> {{ $.Params.sections.phd_advisees.labels.github }}
+            </a>
+            {{ end }}
+          </div>
+          <span class="font-label-uppercase text-label-uppercase text-secondary font-semibold">{{ .room }}</span>
+        </div>
+      </article>
+      {{ end }}
+
+      <!-- Lab Collective Callout / Open Slot -->
+      <div class="bg-primary p-space-lg rounded-xl text-on-primary shadow-md flex flex-col justify-between">
+        <div class="space-y-space-md">
+          <div class="inline-flex items-center gap-2 text-secondary-fixed">
+            <span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+            <span class="font-label-uppercase text-label-uppercase tracking-widest uppercase">{{ .Params.sections.phd_advisees.callout.label }}</span>
+          </div>
+          <h3 class="font-headline-md text-headline-md text-on-primary">{{ .Params.sections.phd_advisees.callout.title }}</h3>
+          <p class="font-body-sm text-body-sm text-surface-container-high leading-relaxed">
+            {{ .Params.sections.phd_advisees.callout.description }}
+          </p>
+        </div>
+        <div class="pt-space-md mt-space-md">
+          <a class="inline-flex items-center gap-2 px-space-md py-space-xs rounded bg-surface text-primary font-label-md text-label-md hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-colors" href="{{ .Params.sections.phd_advisees.callout.link_url }}">
+            <span class="">{{ .Params.sections.phd_advisees.callout.link_text }}</span>
+            <span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Postdoctoral Fellows & Research Scientists -->
+  <section class="space-y-space-md">
+    <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-space-xs pb-space-xs">
+      <div>
+        <span class="font-label-uppercase text-label-uppercase text-secondary tracking-widest uppercase block">{{ .Params.sections.postdocs.label }}</span>
+        <h2 class="font-headline-lg text-headline-lg text-primary">{{ .Params.sections.postdocs.title }}</h2>
+      </div>
+    </div>
+
+    {{ range where hugo.Data.students "type" "postdoc" }}
+    <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-lg">
+        <img class="w-24 h-24 rounded object-cover shadow-sm flex-shrink-0" data-alt="{{ .image_alt }}" src="{{ .image }}">
+        <div class="space-y-space-xs">
+          <div class="flex items-center gap-space-sm flex-wrap">
+            <h3 class="font-headline-md text-headline-md text-primary">{{ .name }}</h3>
+            <span class="px-2.5 py-0.5 rounded bg-surface-container-high text-primary font-label-uppercase text-label-uppercase font-semibold">
+              {{ .role }}
+            </span>
+          </div>
+          <p class="font-body-md text-body-md text-secondary font-medium">
+            {{ .education }}
+          </p>
+          <p class="font-body-sm text-body-sm text-on-surface-variant max-w-2xl leading-relaxed">
+            {{ .description | safeHTML }}
+          </p>
+        </div>
+      </div>
+      <div class="flex lg:flex-col items-center lg:items-end gap-space-sm self-stretch lg:self-auto justify-between pt-space-sm lg:pt-0">
+        {{ range .links }}
+          {{ if eq .type "primary" }}
+            <a class="px-space-md py-space-xs bg-primary text-on-primary rounded font-label-md text-label-md hover:bg-primary-container transition-colors inline-flex items-center gap-1.5 shadow-sm" href="{{ .url }}">
+              {{ if .icon }}<span class="material-symbols-outlined text-[16px]">{{ .icon }}</span>{{ end }} {{ .text }}
+            </a>
+          {{ else }}
+            <a class="font-label-md text-label-md text-secondary hover:underline inline-flex items-center gap-1" href="{{ .url }}">
+              <span class="">{{ .text }}</span>
+            </a>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </section>
+
+  <!-- Section 3: Undergraduate Researchers & Master's Theses -->
+  <section class="space-y-space-md">
+    <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-space-xs pb-space-xs">
+      <div>
+        <span class="font-label-uppercase text-label-uppercase text-secondary tracking-widest uppercase block">{{ .Params.sections.undergrads.label }}</span>
+        <h2 class="font-headline-lg text-headline-lg text-primary">{{ .Params.sections.undergrads.title }}</h2>
+      </div>
+      <p class="font-body-sm text-body-sm text-on-surface-variant">{{ .Params.sections.undergrads.description }}</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+      {{ range where hugo.Data.students "type" "undergrad" }}
+      <div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between gap-space-md">
+        <div class="space-y-space-xs">
+          <div class="flex items-center justify-between">
+            <span class="font-label-uppercase text-label-uppercase text-secondary tracking-wider">{{ .badge1 }}</span>
+            <span class="px-2 py-0.5 rounded bg-surface text-on-surface-variant font-label-uppercase text-[10px]">{{ .badge2 }}</span>
+          </div>
+          <h4 class="font-headline-sm text-headline-sm text-primary">{{ .name }}</h4>
+          <p class="font-body-sm text-body-sm text-on-surface italic">
+            {{ .treatise }}
+          </p>
+          <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            {{ .description | safeHTML }}
+          </p>
+        </div>
+        <div class="pt-space-xs">
+          {{ range .links }}
+          <a class="font-label-md text-label-md text-secondary hover:underline inline-flex items-center gap-1" href="{{ .url }}">
+            {{ .text | safeHTML }}
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- Section 4: Ph.D. Alumni & Placements Table -->
+  <section class="space-y-space-md">
+    <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-space-xs pb-space-xs">
+      <div>
+        <span class="font-label-uppercase text-label-uppercase text-secondary tracking-widest uppercase block">{{ .Params.sections.alumni.label }}</span>
+        <h2 class="font-headline-lg text-headline-lg text-primary">{{ .Params.sections.alumni.title }}</h2>
+      </div>
+      <div class="flex items-center gap-space-xs">
+        <span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+        <span class="font-label-uppercase text-label-uppercase text-on-surface-variant">{{ .Params.sections.alumni.subtitle }}</span>
+      </div>
+    </div>
+
+    <!-- Scholarly Table Card -->
+    <div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-surface-container-low text-on-surface-variant font-label-uppercase text-label-uppercase">
+              {{ range .Params.sections.alumni.table_headers }}
+              <th class="py-space-md px-space-md lg:px-space-lg font-semibold tracking-wider">{{ . }}</th>
+              {{ end }}
+            </tr>
+          </thead>
+          <tbody class="divide-y-0 text-on-surface font-body-sm text-body-sm">
+            {{ range $index, $alumnus := where hugo.Data.students "type" "alumni" }}
+            <tr class="{{ if not (modBool $index 2) }}bg-surface-container-low/20 {{ end }}hover:bg-surface-container-low/50 transition-colors">
+              <td class="py-space-md px-space-md lg:px-space-lg">
+                <div class="font-headline-sm text-[17px] text-primary font-semibold">{{ .name }}</div>
+                <span class="text-on-surface-variant font-label-uppercase text-[11px]">{{ .award }}</span>
+              </td>
+              <td class="py-space-md px-space-md font-medium text-secondary">{{ .year }}</td>
+              <td class="py-space-md px-space-md lg:px-space-lg max-w-xs">
+                <p class="italic text-on-surface leading-snug">
+                  {{ .dissertation }}
+                </p>
+                <a class="text-secondary hover:underline font-label-uppercase text-[11px] block mt-1" href="{{ .doi_link }}">{{ $.Params.sections.alumni.labels.doi }}</a>
+              </td>
+              <td class="py-space-md px-space-md text-on-surface-variant">{{ .first_placement }}</td>
+              <td class="py-space-md px-space-md lg:px-space-lg font-medium text-primary">
+                <span class="inline-flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-secondary text-[16px]">{{ .current_post_icon }}</span>
+                  {{ .current_post }}
+                </span>
+              </td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+      <div class="bg-surface-container p-space-md flex flex-col sm:flex-row items-center justify-between text-on-surface-variant font-body-sm text-body-sm gap-space-sm">
+        <span class="">{{ .Params.sections.alumni.footer.text }}</span>
+        <a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors inline-flex items-center gap-1" href="{{ .Params.sections.alumni.footer.link_url }}">
+          <span class="">{{ .Params.sections.alumni.footer.link_text }}</span>
+          <span class="material-symbols-outlined text-[16px]">download</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Mentorship & Advising Philosophy -->
+  <section class="bg-surface-container-low p-space-lg lg:p-space-xl rounded-xl space-y-space-lg" id="philosophy">
+    <div class="max-w-3xl space-y-space-xs">
+      <span class="font-label-uppercase text-label-uppercase text-secondary tracking-widest uppercase">{{ .Params.mentorship.label }}</span>
+      <h2 class="font-headline-lg text-headline-lg text-primary">
+        {{ .Params.mentorship.title }}
+      </h2>
+      <p class="font-quote-scholarly text-quote-scholarly text-on-surface-variant italic">
+        {{ .Params.mentorship.quote }}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+      {{ range .Params.mentorship.principles }}
+      <div class="space-y-space-xs bg-surface p-space-md rounded-lg shadow-sm">
+        <div class="w-10 h-10 rounded bg-{{ .color }} text-{{ .text_color }} flex items-center justify-center font-headline-md font-semibold text-headline-sm">
+          {{ .number }}
+        </div>
+        <h3 class="font-headline-sm text-headline-sm text-primary">{{ .title }}</h3>
+        <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          {{ .description }}
+        </p>
+      </div>
+      {{ end }}
+    </div>
+
+    <!-- Prospective Students Guidance Box -->
+    <div class="bg-surface-container-highest p-space-md lg:p-space-lg rounded-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+      <div class="space-y-1">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-secondary text-[20px]">info</span>
+          <h4 class="font-headline-sm text-headline-sm text-primary">{{ .Params.mentorship.prospective.title }}</h4>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant max-w-3xl">
+          {{ .Params.mentorship.prospective.description }}
+        </p>
+      </div>
+      <a class="px-space-md py-space-xs bg-primary text-on-primary rounded font-label-md text-label-md hover:bg-primary-container transition-colors whitespace-nowrap shadow-sm" href="{{ .Params.mentorship.prospective.button_link }}">
+        {{ .Params.mentorship.prospective.button_text }}
+      </a>
+    </div>
+  </section>
+
+</div>
+{{ end }}

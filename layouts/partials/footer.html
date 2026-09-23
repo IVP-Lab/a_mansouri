@@ -1,0 +1,52 @@
+<footer class="w-full bg-surface-container-low mt-space-xl shadow-[0_-1px_6px_rgba(3,22,51,0.03)]">
+  <div class="max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter-desktop">
+      <div class="space-y-space-sm md:col-span-1">
+        <div class="flex items-center gap-space-sm">
+          <img alt="{{ hugo.Data.site.footer.name }} Logo" class="h-6 w-auto object-contain" src="{{ hugo.Data.site.footer.logo_url }}">
+          <span class="font-headline-sm text-headline-sm text-primary">{{ hugo.Data.site.footer.name }}</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">{{ hugo.Data.site.footer.bio }}</p>
+      </div>
+      <div class="space-y-space-sm">
+        <h3 class="font-label-uppercase text-label-uppercase text-secondary tracking-widest uppercase">{{ hugo.Data.site.footer.repositories.title }}</h3>
+        <ul class="space-y-space-xs font-body-sm text-body-sm">
+          {{ range hugo.Data.site.footer.repositories.links }}
+          <li class="flex items-center gap-space-xs text-on-surface-variant hover:text-secondary cursor-pointer transition-colors">
+            <span class="material-symbols-outlined text-[16px]">{{ .icon }}</span>
+            <a class="underline-offset-4 hover:underline" href="{{ .url }}">{{ .name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="space-y-space-sm">
+        <h3 class="font-label-uppercase text-label-uppercase text-secondary tracking-widest uppercase">{{ hugo.Data.site.footer.resources.title }}</h3>
+        <ul class="space-y-space-xs font-body-sm text-body-sm">
+          {{ range hugo.Data.site.footer.resources.links }}
+          <li class="flex items-center gap-space-xs text-on-surface-variant hover:text-secondary cursor-pointer transition-colors">
+            <span class="material-symbols-outlined text-[16px]">{{ .icon }}</span>
+            <a class="underline-offset-4 hover:underline" href="{{ .url }}">{{ .name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="space-y-space-sm" id="contact">
+        <h3 class="font-label-uppercase text-label-uppercase text-secondary tracking-widest uppercase">{{ hugo.Data.site.footer.location.title }}</h3>
+        <address class="not-italic font-body-sm text-body-sm text-on-surface-variant space-y-space-xs">
+          <p class="">
+            {{ range hugo.Data.site.footer.location.address }}
+              {{ . }}<br>
+            {{ end }}
+          </p>
+          <p class="text-primary font-medium flex items-center gap-space-xs mt-space-sm">
+            <span class="material-symbols-outlined text-[16px] text-secondary">schedule</span>{{ hugo.Data.site.footer.location.office_hours }}
+          </p>
+        </address>
+      </div>
+    </div>
+    <div class="mt-space-xl pt-space-lg flex flex-col md:flex-row items-center justify-between text-on-surface-variant font-body-sm text-body-sm gap-space-sm">
+      <p class="">© {{ now.Format "2006" }} {{ hugo.Data.site.footer.copyright }}</p>
+      <p class="font-label-uppercase text-label-uppercase text-outline tracking-wider">{{ hugo.Data.site.footer.archival }}</p>
+    </div>
+  </div>
+</footer>

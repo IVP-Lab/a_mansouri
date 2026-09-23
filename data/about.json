@@ -1,0 +1,75 @@
+{
+  "name": "Prof. Azadeh Mansouri, Ph.D.",
+  "title": "Associate Professor of Electrical and Computer Engineering",
+  "tags": [
+    "Director, Multimedia Security & Image Processing Lab",
+    "Senior Member IEEE",
+    "Associate Professor"
+  ],
+  "quote": "\u201cDigital media integrity is paramount in the modern era. True innovation emerges when robust image processing techniques meet accountable and secure multimedia systems.\u201d",
+  "bio": [
+    "Azadeh Mansouri is an Associate Professor of Electrical and Computer Engineering. For over fifteen years, her research has bridged intelligent signal processing, digital watermarking, and applied computer vision.",
+    "Her laboratory formulates robust algorithms for image super-resolution, compressed domain video watermarking, and AI-generated content quality assessment, ensuring the authenticity and fidelity of digital media across critical deployments."
+  ],
+  "cv_link": "#",
+  "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuC9YeAud9dfoOZFs81fqiXSI-Cb65U1GQ2O--mjxRmDqSgvoheCk98Ic7s4e6PKAy2QHGQA31TnX8ng1A_1oO3IwxX6wv-_5kyglsOuVl8jQuI8-4qutNHgpNsh05xopdFAbcSwrS8vHKGxox7YsAciNJU6gnwta94ZpUQLRQ7pu9vWr8IrV59QkpujHT75wPcLd7NnyBZ7LsmNfI-OeitXVG2nyOuUJqadzM8wGqLRsVzz4SxGlTk",
+  "appointments": "Gates Computer Science Bldg \u2022 Room 412",
+  "office_hours": {
+    "time": "Tuesdays & Thursdays \u2022 <strong class=\"text-on-surface\">2:00 PM \u2013 4:00 PM (PST)</strong>",
+    "note": "Advising slots reserved exclusively for graduate fellows, advisees, and scheduled external committee reviewers.",
+    "email": "mansouri@ece.engineering.edu",
+    "location": "Gates Hall, 353 Jane Stanford Way, Stanford, CA"
+  },
+  "indices": {
+    "date": "Verified via Google Scholar & DBLP \u2022 Fall 2024 Index",
+    "stats": [
+      {
+        "label": "Citations",
+        "icon": "auto_stories",
+        "value": "14,200+",
+        "detail": "Across 112 archival journal papers"
+      },
+      {
+        "label": "H-Index",
+        "icon": "analytics",
+        "value": "58",
+        "detail": "i10-Index: 124 publications"
+      },
+      {
+        "label": "Ph.D. Alumni",
+        "icon": "school",
+        "value": "24",
+        "detail": "16 holding tenured university chairs"
+      },
+      {
+        "label": "Best Papers",
+        "icon": "military_tech",
+        "value": "4 Awards",
+        "detail": "NeurIPS, ICML, OOPSLA & CAV"
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "tag": "Keynote Address",
+      "date": "December 2024 \u2022 Vancouver, Canada",
+      "title": "Keynote: Formal Foundations for Multimedia Security",
+      "link": "#",
+      "description": "Delivered the opening plenary session on provably robust video watermarking and AI-generated content assessment. Accompanying slides, formal proofs, and seminar video are now archived in the open lab repo.",
+      "links": [
+        {
+          "text": "Watch Plenary Video \u2192",
+          "url": "#"
+        },
+        {
+          "text": "Presentation Deck (PDF) \u2192",
+          "url": "#"
+        }
+      ]
+    }
+  ],
+  "philosophy": {
+    "title": "Laboratory Philosophy",
+    "description": "Our group operates under the conviction that digital media processing must be governed by robust algorithmic design and empirical validation, ensuring both fidelity and security."
+  }
+}

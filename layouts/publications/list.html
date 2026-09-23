@@ -1,0 +1,353 @@
+{{ define "main" }}
+<!-- Archival Page Header Section -->
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="max-w-3xl">
+<div class="flex items-center gap-space-xs text-secondary font-label-uppercase text-label-uppercase tracking-widest uppercase mb-space-xs">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+<span class="">{{ .Params.subtitle }}</span>
+</div>
+<h1 class="font-display-hero text-display-hero text-primary tracking-tight">
+            {{ .Title }}
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-sm leading-relaxed">
+            {{ .Params.description }}
+          </p>
+</div>
+
+</div>
+<!-- Quick Scholarly Repositories / External Indices Bar -->
+<div class="mt-space-lg pt-space-md flex flex-wrap items-center gap-space-xs sm:gap-space-sm">
+<span class="font-label-uppercase text-label-uppercase text-on-surface-variant mr-space-xs">External Indices:</span>
+<a class="inline-flex items-center gap-space-xs bg-surface-container px-space-md py-space-xs rounded font-label-md text-label-md text-primary hover:bg-secondary-container hover:text-on-secondary-container transition-colors shadow-sm" href="https://scholar.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-secondary">school</span>
+<span class="">Google Scholar (14.2k)</span>
+<span class="material-symbols-outlined text-[14px]">north_east</span>
+</a>
+<a class="inline-flex items-center gap-space-xs bg-surface-container px-space-md py-space-xs rounded font-label-md text-label-md text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="https://dblp.org" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">database</span>
+<span class="">DBLP Bibliography</span>
+<span class="material-symbols-outlined text-[14px]">north_east</span>
+</a>
+<a class="inline-flex items-center gap-space-xs bg-surface-container px-space-md py-space-xs rounded font-label-md text-label-md text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="https://arxiv.org" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">article</span>
+<span class="">arXiv Preprints</span>
+<span class="material-symbols-outlined text-[14px]">north_east</span>
+</a>
+<a class="inline-flex items-center gap-space-xs bg-surface-container px-space-md py-space-xs rounded font-label-md text-label-md text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="https://semanticscholar.org" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">psychology</span>
+<span class="">Semantic Scholar</span>
+<span class="material-symbols-outlined text-[14px]">north_east</span>
+</a>
+<a class="inline-flex items-center gap-space-xs bg-surface-container px-space-md py-space-xs rounded font-label-md text-label-md text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="https://dl.acm.org" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span class="">ACM Digital Library</span>
+<span class="material-symbols-outlined text-[14px]">north_east</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Interactive Controls: Filter & Search Console -->
+<section class="w-full bg-surface py-space-lg">
+<div class="max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="bg-surface-container p-space-md sm:p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<!-- Search Field -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-md">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-outline pl-11 pr-space-md py-space-xs sm:py-2.5 rounded text-body-md font-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" id="publication-search" placeholder="Search monograph title, co-author, venue, or theoretical keywords..." type="text">
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface-variant">
+<span class="">Showing <strong class="text-primary font-semibold" id="visible-count">5</strong> seminal treatises</span>
+<button class="ml-space-sm text-secondary font-label-md hover:underline hidden" id="reset-filters">Reset filters</button>
+</div>
+</div>
+<!-- Filter Dimension Rows -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<!-- Year Filter -->
+<div class="flex flex-wrap items-center gap-space-xs sm:gap-space-sm">
+<span class="font-label-uppercase text-label-uppercase text-outline w-24">Timeline</span>
+<button class="filter-btn active-filter px-space-md py-1 rounded text-body-sm font-label-md bg-primary text-on-primary shadow-sm transition-colors" data-filter="year" data-value="all">All Eras</button>
+<button class="filter-btn px-space-md py-1 rounded text-body-sm font-label-md bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors" data-filter="year" data-value="2024">2024</button>
+<button class="filter-btn px-space-md py-1 rounded text-body-sm font-label-md bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors" data-filter="year" data-value="2023">2023</button>
+<button class="filter-btn px-space-md py-1 rounded text-body-sm font-label-md bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors" data-filter="year" data-value="2022">2022</button>
+<button class="filter-btn px-space-md py-1 rounded text-body-sm font-label-md bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors" data-filter="year" data-value="archive">Archival (Pre-2022)</button>
+</div>
+<!-- Research Vector Filter -->
+<div class="flex flex-wrap items-center gap-space-xs sm:gap-space-sm">
+<span class="font-label-uppercase text-label-uppercase text-outline w-24">Focus Area</span>
+<button class="filter-btn active-filter px-space-md py-1 rounded text-body-sm font-label-md bg-primary text-on-primary shadow-sm transition-colors" data-filter="topic" data-value="all">All Vectors</button>
+<button class="filter-btn px-space-md py-1 rounded text-body-sm font-label-md bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors" data-filter="topic" data-value="verifiable-ai">Verifiable AI</button>
+<button class="filter-btn px-space-md py-1 rounded text-body-sm font-label-md bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors" data-filter="topic" data-value="cognitive-architectures">Cognitive Architectures</button>
+<button class="filter-btn px-space-md py-1 rounded text-body-sm font-label-md bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors" data-filter="topic" data-value="algorithmic-ethics">Algorithmic Ethics</button>
+<button class="filter-btn px-space-md py-1 rounded text-body-sm font-label-md bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors" data-filter="topic" data-value="neuro-symbolic">Neuro-Symbolic</button>
+</div>
+<!-- Publication Type Filter -->
+<div class="flex flex-wrap items-center gap-space-xs sm:gap-space-sm">
+<span class="font-label-uppercase text-label-uppercase text-outline w-24">Venue Format</span>
+<button class="filter-btn active-filter px-space-md py-1 rounded text-body-sm font-label-md bg-primary text-on-primary shadow-sm transition-colors" data-filter="type" data-value="all">All Mediums</button>
+<button class="filter-btn px-space-md py-1 rounded text-body-sm font-label-md bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors" data-filter="type" data-value="conference">Refereed Proceedings</button>
+<button class="filter-btn px-space-md py-1 rounded text-body-sm font-label-md bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors" data-filter="type" data-value="journal">Academic Journals</button>
+<button class="filter-btn px-space-md py-1 rounded text-body-sm font-label-md bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors" data-filter="type" data-value="monograph">University Press / Books</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Curated Publications List Section -->
+<section class="w-full py-space-lg">
+<div class="max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="flex flex-col gap-space-xl" id="publications-container">
+{{ range sort hugo.Data.publications "year" "desc" }}
+<article class="pub-card bg-surface-container-low rounded-xl p-space-lg sm:p-space-xl shadow-sm hover:shadow-md transition-shadow relative flex flex-col md:flex-row gap-space-lg" data-topic="{{ index .topics 0 }}" data-type="{{ .type }}" data-year="{{ .year }}">
+<!-- Left Decorative / Year Marker -->
+<div class="hidden md:flex flex-col items-center justify-start w-16 pt-2 shrink-0">
+<span class="font-quote-scholarly {{ if eq .year "0000" }}text-body-lg{{ else }}text-headline-lg{{ end }} text-secondary font-bold">{{ if eq .year "0000" }}Archive{{ else }}{{ .year }}{{ end }}</span>
+<span class="font-label-uppercase text-label-uppercase text-outline uppercase tracking-widest mt-1">{{ if eq .year "0000" }}...{{ else }}DEC{{ end }}</span>
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container mt-space-md shadow-sm">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+</div>
+<!-- Main Content Ledger -->
+<div class="flex-1 flex flex-col gap-space-sm">
+<!-- Distinguished Award Ribbon Banner -->
+{{ if .award }}
+<div class="inline-flex items-center gap-space-xs bg-secondary-container text-on-secondary-container px-space-md py-1 rounded font-label-uppercase text-label-uppercase w-fit shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">workspace_premium</span>
+<span class="">{{ .award }}</span>
+</div>
+{{ end }}
+<!-- Title -->
+<h2 class="font-headline-md text-headline-md text-primary hover:text-secondary cursor-pointer transition-colors leading-snug">
+              {{ .title }}
+            </h2>
+<!-- Authors -->
+<p class="font-body-md text-body-md text-on-surface">{{ .authorsHtml | safeHTML }}</p>
+<!-- Venue & Metadata Tags -->
+<div class="flex flex-wrap items-center gap-space-xs text-body-sm font-body-sm text-on-surface-variant">
+<span class="italic font-quote-scholarly text-[17px] text-primary">{{ .venue }}</span>
+{{ range .tags }}
+<span class="">•</span>
+<span class="bg-surface-container-highest px-2 py-0.5 rounded text-outline font-mono text-[12px]">{{ . }}</span>
+{{ end }}
+</div>
+<!-- Abstract Excerpt -->
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mt-space-xs">
+              {{ .abstract }}
+            </p>
+<!-- Scholarly Action Palette -->
+<div class="flex flex-wrap items-center gap-space-xs sm:gap-space-sm pt-space-sm">
+{{ if .links.pdf }}
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-xs bg-primary text-on-primary rounded font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm" href="{{ .links.pdf }}">
+<span class="material-symbols-outlined text-[16px]">picture_as_pdf</span>
+<span class="">Download PDF</span>
+</a>
+{{ end }}
+{{ if .links.scholar }}
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container text-on-surface-variant hover:text-primary rounded font-label-md text-label-md transition-colors shadow-sm border border-outline-variant/30" href="{{ .links.scholar }}" target="_blank">
+<span class="material-symbols-outlined text-[16px]">school</span>
+<span class="">Google Scholar</span>
+</a>
+{{ end }}
+{{ if .links.arxiv }}
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container text-on-surface-variant hover:text-primary rounded font-label-md text-label-md transition-colors" href="{{ .links.arxiv }}">
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+<span class="">arXiv</span>
+</a>
+{{ end }}
+{{ if .bibtex }}
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container text-on-surface-variant hover:text-primary rounded font-label-md text-label-md transition-colors" onclick="toggleBibtex('bib-{{ .id }}')">
+<span class="material-symbols-outlined text-[16px]">format_quote</span>
+<span class="">BibTeX</span>
+</button>
+{{ end }}
+{{ if .links.code }}
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container text-on-surface-variant hover:text-primary rounded font-label-md text-label-md transition-colors" href="{{ .links.code }}">
+<span class="material-symbols-outlined text-[16px]">terminal</span>
+<span class="">Code (GitHub)</span>
+</a>
+{{ end }}
+{{ if .links.slides }}
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container text-on-surface-variant hover:text-primary rounded font-label-md text-label-md transition-colors" href="{{ .links.slides }}">
+<span class="material-symbols-outlined text-[16px]">slideshow</span>
+<span class="">Presentation Slides</span>
+</a>
+{{ end }}
+</div>
+<!-- Collapsible BibTeX -->
+{{ if .bibtex }}
+<div class="hidden mt-space-sm bg-surface-container-highest p-space-md rounded text-body-sm font-mono text-on-surface text-[13px] leading-relaxed overflow-x-auto shadow-sm" id="bib-{{ .id }}">
+<div class="flex items-center justify-between mb-space-xs text-outline font-label-uppercase text-[11px]">
+<span class="">BIBTEX CITATION ENTRY</span>
+<button class="text-secondary hover:underline flex items-center gap-1 font-label-md" onclick="copyToClipboard('bib-text-{{ .id }}', this)">
+<span class="material-symbols-outlined text-[14px]">content_copy</span> Copy
+                </button>
+</div>
+<pre id="bib-text-{{ .id }}" class="">{{ .bibtex }}</pre>
+</div>
+{{ end }}
+</div>
+</article>
+{{ end }}
+<!-- Add more entries when converting data... -->
+</div>
+<!-- Empty Filter State Notice (Hidden by default) -->
+<div class="hidden bg-surface-container-low rounded-xl p-space-xl text-center flex-col items-center justify-center my-space-lg" id="no-results">
+<span class="material-symbols-outlined text-outline text-[48px] mb-space-sm">auto_stories</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">No academic records match these criteria</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-md">Try selecting a different timeline, venue type, or clear the search inquiry to view the complete publication corpus.</p>
+<button class="mt-space-md px-space-md py-space-xs bg-primary text-on-primary rounded font-label-md text-label-md" id="clear-all-filters-btn">Clear Active Filters</button>
+</div>
+<!-- Offprint / Access Request Banner -->
+<div class="mt-space-xl bg-surface-container p-space-lg rounded-xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[28px]">lock_open</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Open Access &amp; Archival Requests</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Are you an independent researcher or scholar without institutional library access? We gladly furnish full offprint PDFs upon request.</p>
+</div>
+</div>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-xs bg-surface-container-lowest text-primary hover:bg-surface-container-highest rounded font-label-md text-label-md shadow-sm transition-colors whitespace-nowrap" href="mailto:vance-lab@stanford.edu?subject=Preprint%20Request">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+<span class="">Request Paper Offprint</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Interactive JavaScript -->
+<script>
+    function toggleBibtex(elementId) {
+      const el = document.getElementById(elementId);
+      if (!el) return;
+      if (el.classList.contains('hidden')) {
+        el.classList.remove('hidden');
+      } else {
+        el.classList.add('hidden');
+      }
+    }
+
+    function copyToClipboard(preId, btn) {
+      const pre = document.getElementById(preId);
+      if (!pre) return;
+      navigator.clipboard.writeText(pre.innerText).then(() => {
+        const originalHtml = btn.innerHTML;
+        btn.innerHTML = `<span class="material-symbols-outlined text-[14px]">check</span> Copied!`;
+        setTimeout(() => {
+          btn.innerHTML = originalHtml;
+        }, 2000);
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const activeFilters = {
+        year: 'all',
+        topic: 'all',
+        type: 'all',
+        search: ''
+      };
+
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const searchInput = document.getElementById('publication-search');
+      const pubCards = document.querySelectorAll('.pub-card');
+      const visibleCountEl = document.getElementById('visible-count');
+      const resetBtn = document.getElementById('reset-filters');
+      const noResults = document.getElementById('no-results');
+      const clearAllBtn = document.getElementById('clear-all-filters-btn');
+
+      function updateActiveStyles() {
+        filterButtons.forEach(btn => {
+          const type = btn.getAttribute('data-filter');
+          const val = btn.getAttribute('data-value');
+          if (activeFilters[type] === val) {
+            btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+            btn.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+          } else {
+            btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+            btn.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+          }
+        });
+
+        const isFiltered = activeFilters.year !== 'all' || activeFilters.topic !== 'all' || activeFilters.type !== 'all' || activeFilters.search.trim() !== '';
+        if (resetBtn) {
+          if (isFiltered) resetBtn.classList.remove('hidden');
+          else resetBtn.classList.add('hidden');
+        }
+      }
+
+      function applyFilters() {
+        let visibleCount = 0;
+        const query = activeFilters.search.toLowerCase().trim();
+
+        pubCards.forEach(card => {
+          const cardYear = card.getAttribute('data-year');
+          const cardTopic = card.getAttribute('data-topic');
+          const cardType = card.getAttribute('data-type');
+          const cardText = card.innerText.toLowerCase();
+
+          let matchesYear = false;
+          if (activeFilters.year === 'all') {
+            matchesYear = true;
+          } else if (activeFilters.year === 'archive') {
+            matchesYear = parseInt(cardYear) < 2022;
+          } else {
+            matchesYear = cardYear === activeFilters.year;
+          }
+          const matchesTopic = activeFilters.topic === 'all' || cardTopic === activeFilters.topic;
+          const matchesType = activeFilters.type === 'all' || cardType === activeFilters.type;
+          const matchesSearch = !query || cardText.includes(query);
+
+          if (matchesYear && matchesTopic && matchesType && matchesSearch) {
+            card.classList.remove('hidden');
+            visibleCount++;
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+
+        if (visibleCountEl) visibleCountEl.textContent = visibleCount;
+
+        if (visibleCount === 0) {
+          noResults.classList.remove('hidden');
+          noResults.classList.add('flex');
+        } else {
+          noResults.classList.add('hidden');
+          noResults.classList.remove('flex');
+        }
+      }
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filterType = btn.getAttribute('data-filter');
+          const filterValue = btn.getAttribute('data-value');
+          activeFilters[filterType] = filterValue;
+          updateActiveStyles();
+          applyFilters();
+        });
+      });
+
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          activeFilters.search = e.target.value;
+          updateActiveStyles();
+          applyFilters();
+        });
+      }
+
+      function resetAll() {
+        activeFilters.year = 'all';
+        activeFilters.topic = 'all';
+        activeFilters.type = 'all';
+        activeFilters.search = '';
+        if (searchInput) searchInput.value = '';
+        updateActiveStyles();
+        applyFilters();
+      }
+
+      if (resetBtn) resetBtn.addEventListener('click', resetAll);
+      if (clearAllBtn) clearAllBtn.addEventListener('click', resetAll);
+    });
+  </script>
+{{ end }}

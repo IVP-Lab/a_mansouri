@@ -1,0 +1,7 @@
+baseURL = 'https://example.org/'
+locale = 'en-US'
+title = 'Professor Academic Portal'
+disableKinds = ["taxonomy", "term"]
+
+[build]
+  writeStats = true

@@ -1,0 +1,317 @@
+{{ define "main" }}
+<!-- Page Header / Dossier Title -->
+<section class="w-full max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop pt-space-lg pb-space-md">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-md">
+<div class="space-y-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs text-secondary font-label-uppercase text-label-uppercase tracking-widest">
+<span class="inline-block w-2.5 h-2.5 bg-secondary rotate-45"></span>
+<span class="">{{ hugo.Data.research.pageHeader.supertitle }}</span>
+</div>
+<h1 class="font-display-hero text-display-hero text-primary tracking-tight">{{ hugo.Data.research.pageHeader.title }}</h1>
+<p class="font-quote-scholarly text-quote-scholarly text-on-surface-variant italic leading-relaxed pt-space-xs">
+          {{ hugo.Data.research.pageHeader.quote }}
+        </p>
+</div>
+<!-- Quick Metrics Counter Pillar -->
+<div class="bg-surface-container p-space-md rounded-lg shadow-sm flex items-center gap-space-lg self-start md:self-auto shrink-0">
+{{ range $index, $metric := hugo.Data.research.pageHeader.metrics }}
+{{ if gt $index 0 }}<div class="w-px h-10 bg-outline-variant/40"></div>{{ end }}
+<div class="text-left">
+<span class="block font-headline-md text-headline-md text-{{ $metric.color }} font-bold">{{ $metric.value }}</span>
+<span class="font-label-uppercase text-label-uppercase text-on-surface-variant tracking-wider">{{ $metric.label }}</span>
+</div>
+{{ end }}
+</div>
+</div>
+<div class="w-full h-[1px] bg-outline-variant/30 mt-space-sm"></div>
+</section>
+
+<!-- Editorial Introduction with Architectural Photo -->
+<section class="w-full max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-md">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<div class="lg:col-span-7 space-y-space-md">
+<span class="font-label-uppercase text-label-uppercase text-secondary uppercase tracking-widest block">{{ hugo.Data.research.editorial.supertitle }}</span>
+<h2 class="font-headline-lg text-headline-lg text-primary leading-tight">
+          {{ hugo.Data.research.editorial.title }}
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          {{ hugo.Data.research.editorial.body }}
+        </p>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+{{ range hugo.Data.research.editorial.tags }}
+<span class="px-space-sm py-1 bg-surface-container-high text-primary font-label-uppercase text-label-uppercase tracking-wider rounded">{{ . }}</span>
+{{ end }}
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="bg-surface-container-low p-space-sm rounded-lg shadow-md relative">
+<img class="w-full h-80 object-cover rounded shadow-inner" data-alt="{{ hugo.Data.research.editorial.image.alt }}" src="{{ hugo.Data.research.editorial.image.src }}">
+<div class="mt-space-xs flex justify-between items-center text-on-surface-variant font-label-uppercase text-label-uppercase">
+<span class="">{{ hugo.Data.research.editorial.location }}</span>
+<span class="text-secondary">{{ hugo.Data.research.editorial.est }}</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 3 Primary Research Themes / Thrusts -->
+<section class="w-full max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-xs">
+<div>
+<span class="font-label-uppercase text-label-uppercase text-secondary tracking-widest uppercase block mb-1">{{ hugo.Data.research.thrustsSection.supertitle }}</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">{{ hugo.Data.research.thrustsSection.title }}</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+        {{ hugo.Data.research.thrustsSection.description }}
+      </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter-desktop">
+{{ range hugo.Data.research.thrustsSection.thrusts }}
+<article class="bg-surface-container-low rounded-lg p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-full h-1 bg-{{ .borderColor }}"></div>
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-uppercase text-label-uppercase text-secondary tracking-widest uppercase">{{ .supertitle }}</span>
+<span class="material-symbols-outlined text-primary text-[24px]">{{ .icon }}</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary group-hover:text-secondary transition-colors">
+            {{ .title }}
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            {{ .description }}
+          </p>
+<div class="bg-surface-container p-space-sm rounded space-y-1">
+<span class="font-label-uppercase text-label-uppercase text-primary block">{{ .grantsTitle }}</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+              {{ .grants }}
+            </p>
+</div>
+</div>
+<div class="pt-space-md mt-space-md">
+<div class="w-full h-px bg-outline-variant/30 mb-space-sm"></div>
+<a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="{{ .linkUrl }}">
+<span class="">{{ .linkText }}</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+{{ end }}
+</div>
+</section>
+
+<!-- Interactive Data Visualization: Computational Research Topology -->
+<section class="w-full max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-lg">
+<div class="bg-surface-container rounded-xl p-space-lg shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-md">
+<div>
+<span class="font-label-uppercase text-label-uppercase text-secondary tracking-widest uppercase">{{ hugo.Data.research.architectureSection.supertitle }}</span>
+<h3 class="font-headline-md text-headline-md text-primary">{{ hugo.Data.research.architectureSection.title }}</h3>
+</div>
+<div class="flex items-center gap-space-sm font-label-uppercase text-label-uppercase text-on-surface-variant">
+{{ range hugo.Data.research.architectureSection.legends }}
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 bg-{{ .color }} rounded-full"></span> {{ .label }}</span>
+{{ end }}
+</div>
+</div>
+<!-- Scholarly SVG Topology Diagram -->
+<div class="w-full bg-surface-container-lowest rounded-lg p-space-md shadow-inner flex items-center justify-center overflow-x-auto">
+<svg class="w-full max-w-4xl h-auto text-primary" fill="none" viewBox="0 0 960 260" xmlns="http://www.w3.org/2000/svg">
+<!-- Flow Lines -->
+<path class="opacity-40" d="M160 130 H320" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1.5"></path>
+<path class="opacity-40" d="M480 130 H640" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1.5"></path>
+<path class="opacity-60" d="M800 130 H880" stroke="currentColor" stroke-width="1.5"></path>
+<path d="M400 80 V50 H240 V100" opacity="0.6" stroke="#815607" stroke-dasharray="3 3" stroke-width="1.5"></path>
+<path d="M400 180 V210 H720 V160" opacity="0.6" stroke="#815607" stroke-dasharray="3 3" stroke-width="1.5"></path>
+<!-- Node 1: Latent Representation -->
+{{ with index hugo.Data.research.architectureSection.diagramNodes 0 }}
+<g transform="translate(80, 80)">
+<rect fill="#faf9f6" height="100" rx="4" stroke="#031633" stroke-width="1.5" width="160"></rect>
+<text fill="#815607" font-family="'Source Sans 3'" font-size="11" font-weight="600" letter-spacing="1" text-anchor="middle" x="80" y="38">{{ .stage }}</text>
+<text fill="#031633" font-family="'EB Garamond'" font-size="16" font-weight="600" text-anchor="middle" x="80" y="60">{{ .title }}</text>
+<text fill="#44474e" font-family="'Source Sans 3'" font-size="11" text-anchor="middle" x="80" y="78">{{ .subtitle }}</text>
+</g>
+{{ end }}
+<!-- Node 2: Symbolic Engine -->
+{{ with index hugo.Data.research.architectureSection.diagramNodes 1 }}
+<g transform="translate(320, 80)">
+<rect fill="#faf9f6" height="100" rx="4" stroke="#815607" stroke-width="2" width="160"></rect>
+<text fill="#815607" font-family="'Source Sans 3'" font-size="11" font-weight="600" letter-spacing="1" text-anchor="middle" x="80" y="38">{{ .stage }}</text>
+<text fill="#031633" font-family="'EB Garamond'" font-size="16" font-weight="600" text-anchor="middle" x="80" y="60">{{ .title }}</text>
+<text fill="#44474e" font-family="'Source Sans 3'" font-size="11" text-anchor="middle" x="80" y="78">{{ .subtitle }}</text>
+</g>
+{{ end }}
+<!-- Node 3: Formal Certificate -->
+{{ with index hugo.Data.research.architectureSection.diagramNodes 2 }}
+<g transform="translate(560, 80)">
+<rect fill="#faf9f6" height="100" rx="4" stroke="#031633" stroke-width="1.5" width="160"></rect>
+<text fill="#815607" font-family="'Source Sans 3'" font-size="11" font-weight="600" letter-spacing="1" text-anchor="middle" x="80" y="38">{{ .stage }}</text>
+<text fill="#031633" font-family="'EB Garamond'" font-size="16" font-weight="600" text-anchor="middle" x="80" y="60">{{ .title }}</text>
+<text fill="#44474e" font-family="'Source Sans 3'" font-size="11" text-anchor="middle" x="80" y="78">{{ .subtitle }}</text>
+</g>
+{{ end }}
+<!-- Node 4: Auditable Deployment -->
+{{ with index hugo.Data.research.architectureSection.diagramNodes 3 }}
+<g transform="translate(800, 80)">
+<rect fill="#1a2b49" height="100" rx="4" width="130"></rect>
+<text fill="#ffc571" font-family="'Source Sans 3'" font-size="10" font-weight="600" letter-spacing="1" text-anchor="middle" x="65" y="42">{{ .stage }}</text>
+<text fill="#ffffff" font-family="'EB Garamond'" font-size="15" font-weight="600" text-anchor="middle" x="65" y="64">{{ .title }}</text>
+<text fill="#8293b6" font-family="'Source Sans 3'" font-size="11" text-anchor="middle" x="65" y="82">{{ .subtitle }}</text>
+</g>
+{{ end }}
+</svg>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center mt-space-sm italic">
+        {{ hugo.Data.research.architectureSection.figureCaption }}
+      </p>
+</div>
+</section>
+
+<!-- Sponsored Projects & Grants -->
+<section class="w-full max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-xs">
+<div>
+<span class="font-label-uppercase text-label-uppercase text-secondary tracking-widest uppercase block mb-1">{{ hugo.Data.research.grantsSection.supertitle }}</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">{{ hugo.Data.research.grantsSection.title }}</h2>
+</div>
+<div class="flex items-center gap-space-xs">
+{{ range hugo.Data.research.grantsSection.filters }}
+<button class="px-space-md py-1 text-label-md font-label-md rounded {{ .buttonClass }}" id="{{ .id }}">{{ .label }}</button>
+{{ end }}
+</div>
+</div>
+<!-- Archival Ledger Table -->
+<div class="overflow-x-auto bg-surface-container-lowest rounded-lg shadow-sm">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead class="bg-surface-container font-label-uppercase text-label-uppercase text-on-surface-variant tracking-wider uppercase">
+<tr>
+{{ range hugo.Data.research.grantsSection.tableHeaders }}
+<th class="py-space-md px-space-md font-semibold {{ if .class }}{{ .class }}{{ end }}">{{ .label }}</th>
+{{ end }}
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/20 text-on-surface">
+{{ range hugo.Data.research.grantsSection.grants }}
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md font-medium text-primary">
+<span class="font-headline-sm text-headline-sm block">{{ .title }}</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">{{ .subtitle }}</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-space-xs py-0.5 rounded {{ .agencyClass }} font-label-uppercase text-label-uppercase">{{ .agency }}</span>
+</td>
+<td class="py-space-md px-space-md font-mono text-on-surface-variant">{{ .id }}</td>
+<td class="py-space-md px-space-md whitespace-nowrap text-on-surface-variant">{{ .period }}</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 font-label-md text-label-md text-{{ .statusColor }}">
+<span class="w-2 h-2 rounded-full bg-{{ .statusColor }}"></span> {{ .statusText }}
+              </span>
+</td>
+</tr>
+{{ end }}
+</tbody>
+</table>
+</div>
+</section>
+
+<!-- Facilities & Infrastructure Section (Bento Split) -->
+<section class="w-full max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-lg">
+<div class="mb-space-md">
+<span class="font-label-uppercase text-label-uppercase text-secondary tracking-widest uppercase block mb-1">{{ hugo.Data.research.facilitiesSection.supertitle }}</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">{{ hugo.Data.research.facilitiesSection.title }}</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-desktop">
+<!-- High Performance Cluster Card -->
+<div class="md:col-span-7 bg-primary-container text-on-primary rounded-xl p-space-lg shadow-md flex flex-col justify-between relative overflow-hidden">
+<div class="relative z-10 space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-0.5 bg-on-primary-container/20 rounded font-label-uppercase text-label-uppercase text-primary-fixed tracking-widest uppercase">{{ hugo.Data.research.facilitiesSection.compute.tag }}</span>
+<span class="font-label-uppercase text-label-uppercase text-primary-fixed flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-green-400"></span> {{ hugo.Data.research.facilitiesSection.compute.status }}
+            </span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-primary">{{ hugo.Data.research.facilitiesSection.compute.title }}</h3>
+<p class="font-body-md text-body-md text-on-primary-container mt-space-xs leading-relaxed">
+              {{ hugo.Data.research.facilitiesSection.compute.description }}
+            </p>
+</div>
+<div class="grid grid-cols-3 gap-space-sm pt-space-xs">
+{{ range hugo.Data.research.facilitiesSection.compute.stats }}
+<div class="bg-surface/5 p-space-sm rounded">
+<span class="font-headline-sm text-headline-sm text-secondary-fixed block">{{ .value }}</span>
+<span class="font-body-sm text-body-sm text-on-primary-container">{{ .label }}</span>
+</div>
+{{ end }}
+</div>
+</div>
+<div class="pt-space-md mt-space-md z-10">
+<a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-secondary-fixed hover:text-white transition-colors" href="{{ hugo.Data.research.facilitiesSection.compute.linkUrl }}">
+<span class="">{{ hugo.Data.research.facilitiesSection.compute.linkText }}</span>
+<span class="material-symbols-outlined text-[16px]">terminal</span>
+</a>
+</div>
+</div>
+<!-- Physical Collaboration Commons Card -->
+<div class="md:col-span-5 bg-surface-container rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-uppercase text-label-uppercase text-secondary tracking-widest uppercase">{{ hugo.Data.research.facilitiesSection.physical.supertitle }}</span>
+<span class="material-symbols-outlined text-primary text-[20px]">{{ hugo.Data.research.facilitiesSection.physical.icon }}</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary">{{ hugo.Data.research.facilitiesSection.physical.title }}</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
+              {{ hugo.Data.research.facilitiesSection.physical.description }}
+            </p>
+</div>
+<div class="relative rounded overflow-hidden shadow-inner">
+<img class="w-full h-44 object-cover" data-alt="{{ hugo.Data.research.facilitiesSection.physical.image.alt }}" src="{{ hugo.Data.research.facilitiesSection.physical.image.src }}">
+</div>
+</div>
+<div class="pt-space-md mt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+            {{ hugo.Data.research.facilitiesSection.physical.location }}
+          </span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Join Our Lab / Prospective Researchers Section -->
+<section class="w-full max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl">
+<div class="bg-surface-container-low rounded-xl p-space-lg md:p-space-xl shadow-sm relative overflow-hidden">
+<div class="max-w-2xl mb-space-lg">
+<span class="font-label-uppercase text-label-uppercase text-secondary tracking-widest uppercase block mb-1">{{ hugo.Data.research.joinSection.supertitle }}</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">{{ hugo.Data.research.joinSection.title }}</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs">
+          {{ hugo.Data.research.joinSection.description }}
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop">
+{{ range hugo.Data.research.joinSection.roles }}
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="w-8 h-8 rounded-full {{ .numberClass }} flex items-center justify-center font-bold text-sm">{{ .number }}</div>
+<h4 class="font-headline-sm text-headline-sm text-primary pt-space-xs">{{ .title }}</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              {{ .description | safeHTML }}
+            </p>
+</div>
+<div class="pt-space-md">
+{{ if .isLink }}
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors flex items-center gap-1" href="{{ .linkUrl }}">
+<span class="">{{ .action }}</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+{{ else }}
+<span class="font-label-uppercase text-label-uppercase text-secondary block">{{ .action }}</span>
+{{ end }}
+</div>
+</div>
+{{ end }}
+</div>
+</div>
+</section>
+{{ end }}

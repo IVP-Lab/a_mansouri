@@ -1,0 +1,329 @@
+{{ define "main" }}
+<!-- Subtle Architectural Atmospheric Accent -->
+<div class="relative w-full overflow-hidden">
+<div class="max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop pt-8 pb-12">
+<!-- Editorial Overline & Breadcrumb Metadata -->
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-uppercase text-label-uppercase tracking-widest uppercase mb-space-sm">
+<span class="text-secondary font-semibold">{{ .Params.subtitle }}</span>
+<span class="text-outline-variant">•</span>
+<span class="">{{ .Params.school }}</span>
+<span class="text-outline-variant">•</span>
+<span class="">{{ .Params.academic_year }}</span>
+</div>
+<!-- Main Section Header & Scholarly Statement -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-baseline">
+<div class="lg:col-span-7">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-space-md">
+            {{ .Title }}
+          </h1>
+<p class="font-quote-scholarly text-quote-scholarly text-on-surface-variant italic leading-relaxed">
+            {{ .Params.quote }}
+          </p>
+</div>
+<div class="lg:col-span-5 flex flex-col justify-end gap-space-sm pt-4 lg:pt-0">
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Courses bridge foundational mathematical logic with practical systems design. All enrolled scholars are expected to engage actively in both theoretical proofs and reproducible software architectures.
+          </p>
+<div class="flex flex-wrap items-center gap-space-sm pt-2">
+<span class="inline-flex items-center gap-1 font-label-uppercase text-label-uppercase px-2.5 py-1 bg-surface-container-high text-on-surface rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              2 Active Courses
+            </span>
+<span class="inline-flex items-center gap-1 font-label-uppercase text-label-uppercase px-2.5 py-1 bg-surface-container-high text-on-surface-variant rounded">
+              Office: Gates 418
+            </span>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors flex items-center gap-1" href="#resources">
+              Office Hours &amp; Policies ↓
+            </a>
+</div>
+</div>
+</div>
+<!-- Decorative Precision Rule / Metric Band -->
+<div class="w-full my-space-xl bg-surface-container-high h-[1px]"></div>
+<!-- Main Layout: 8-column syllabus stream + 4-column academic sidebar -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- Primary 8-Column Column: Featured Active Courses -->
+<div class="lg:col-span-8 space-y-space-xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">school</span>
+<h2 class="font-headline-md text-headline-md text-primary">Current Semester (2024–2025)</h2>
+</div>
+<span class="font-label-uppercase text-label-uppercase bg-secondary-container/40 text-on-secondary-container px-3 py-1 rounded font-semibold tracking-wider">
+              Enrolling &amp; In-Session
+            </span>
+</div>
+{{ range where hugo.Data.courses "active" true }}
+<!-- Course Card -->
+<article class="bg-surface-container-low rounded-xl p-6 md:p-8 shadow-sm transition-shadow hover:shadow-md relative overflow-hidden">
+<!-- Accent Marker -->
+<div class="absolute top-0 left-0 w-1.5 h-full bg-primary"></div>
+<div class="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-4">
+<div>
+<div class="flex flex-wrap items-center gap-2 mb-1.5">
+<span class="font-label-uppercase text-label-uppercase px-2 py-0.5 bg-primary-container text-on-primary rounded font-semibold">
+                    {{ .code }}
+                  </span>
+<span class="font-label-uppercase text-label-uppercase text-on-surface-variant tracking-wider">
+                    {{ .level }}
+                  </span>
+<span class="font-label-uppercase text-label-uppercase px-2 py-0.5 bg-surface-container-high text-secondary rounded">
+                    {{ .grading }}
+                  </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary leading-snug">
+                  {{ .title }}
+                </h3>
+</div>
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary text-on-primary font-label-md text-label-md rounded shadow-sm hover:bg-primary-container transition-all self-start whitespace-nowrap" href="#">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+                Canvas Portal
+              </a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+              {{ .description }}
+            </p>
+<!-- Logistics Ledger Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 bg-surface rounded-lg mb-6 shadow-sm">
+{{ if .lectures }}
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-0.5 text-[20px]">schedule</span>
+<div>
+<div class="font-label-uppercase text-label-uppercase text-on-surface-variant">Lectures</div>
+<div class="font-body-md text-body-md font-medium text-on-surface">{{ .lectures }}</div>
+</div>
+</div>
+{{ end }}
+{{ if .location }}
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-0.5 text-[20px]">location_on</span>
+<div>
+<div class="font-label-uppercase text-label-uppercase text-on-surface-variant">Classroom</div>
+<div class="font-body-md text-body-md font-medium text-on-surface">{{ .location }}</div>
+</div>
+</div>
+{{ end }}
+{{ if .text }}
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-0.5 text-[20px]">menu_book</span>
+<div>
+<div class="font-label-uppercase text-label-uppercase text-on-surface-variant">Primary Text</div>
+<div class="font-body-sm text-body-sm text-on-surface">{{ .text | safeHTML }}</div>
+</div>
+</div>
+{{ end }}
+{{ if .prerequisites }}
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-0.5 text-[20px]">psychology</span>
+<div>
+<div class="font-label-uppercase text-label-uppercase text-on-surface-variant">Prerequisites</div>
+<div class="font-body-sm text-body-sm text-on-surface">{{ .prerequisites }}</div>
+</div>
+</div>
+{{ end }}
+</div>
+<!-- Teaching Assistants Directory Section -->
+{{ if .tas }}
+<div class="mb-6">
+<h4 class="font-label-uppercase text-label-uppercase text-secondary tracking-widest uppercase mb-3 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">groups</span>
+                Teaching Assistants &amp; Discussion Hours
+              </h4>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+{{ range .tas }}
+<div class="p-3 bg-surface rounded flex items-center gap-3 shadow-sm">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-xs shrink-0">
+                    {{ .initials }}
+                  </div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">{{ .name }}</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">{{ .details }}</p>
+</div>
+</div>
+{{ end }}
+</div>
+</div>
+{{ end }}
+<!-- Resource Actions -->
+<div class="flex flex-wrap items-center justify-between gap-4 pt-4 bg-surface-container-high/40 -mx-6 md:-mx-8 -mb-6 md:-mb-8 px-6 md:px-8 py-4">
+<div class="flex flex-wrap items-center gap-space-md">
+{{ if .syllabus_link }}
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary hover:text-secondary transition-colors underline-offset-4 hover:underline" href="{{ .syllabus_link }}">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+                  Complete Syllabus (PDF)
+                </a>
+{{ end }}
+{{ if .slides_link }}
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary hover:text-secondary transition-colors underline-offset-4 hover:underline" href="{{ .slides_link }}">
+<span class="material-symbols-outlined text-[18px]">folder_zip</span>
+                  Lecture Slides &amp; Code Repo
+                </a>
+{{ end }}
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Last updated: Week 7 Revisions</span>
+</div>
+</article>
+{{ end }}
+<!-- Past Courses Archival Section -->
+<div class="pt-space-md">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-[24px]">inventory_2</span>
+<h2 class="font-headline-md text-headline-md text-primary">Archival Course Repository</h2>
+</div>
+<span class="font-label-uppercase text-label-uppercase text-on-surface-variant">Historical Records</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+              Syllabi, problem sets, and lecture transcripts for past offerings are preserved in perpetuity under open-access archival provisions.
+            </p>
+<div class="space-y-3" id="course-accordion">
+{{ range where hugo.Data.courses "active" false }}
+<!-- Past Course -->
+<div class="bg-surface-container-low rounded-lg p-5 shadow-sm transition-all">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-label-uppercase text-label-uppercase font-bold text-primary">{{ .code }}</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-uppercase text-label-uppercase text-on-surface-variant">{{ .level }}</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">{{ .title }}</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      {{ .description }}
+                    </p>
+</div>
+<div class="flex items-center gap-3 shrink-0 pt-2 md:pt-0">
+<a class="px-3 py-1 bg-surface text-primary font-label-md text-label-md rounded shadow-sm hover:bg-surface-container-high transition-colors flex items-center gap-1" href="{{ .archive_link }}">
+<span class="material-symbols-outlined text-[16px]">book</span>
+                      Course Archive
+                    </a>
+</div>
+</div>
+</div>
+{{ end }}
+</div>
+</div>
+</div>
+<!-- Secondary 4-Column Sidebar: Student Resources, Guidelines & Office Hours -->
+<aside class="lg:col-span-4 space-y-space-lg" id="resources">
+<!-- Office Hours & Booking Module -->
+<div class="bg-primary text-on-primary rounded-xl p-6 shadow-md relative overflow-hidden">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-secondary-fixed text-[24px]">event_available</span>
+<h3 class="font-headline-sm text-headline-sm text-on-primary">Office Hours &amp; Consultations</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary/80 mb-5 leading-relaxed">
+              Open to all enrolled undergraduates, graduate advisees, and researchers exploring cross-disciplinary computational work.
+            </p>
+<div class="space-y-3 mb-6">
+<div class="bg-primary-container p-3 rounded-lg flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px] mt-0.5">timer</span>
+<div>
+<div class="font-label-uppercase text-label-uppercase text-on-primary/70">Regular Drop-in</div>
+<div class="font-body-sm text-body-sm text-on-primary font-medium">Tuesdays &amp; Thursdays: 2:00 – 4:00 PM</div>
+<div class="text-[12px] text-on-primary/60">Gates Building • Office 418</div>
+</div>
+</div>
+<div class="bg-primary-container p-3 rounded-lg flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px] mt-0.5">videocam</span>
+<div>
+<div class="font-label-uppercase text-label-uppercase text-on-primary/70">Virtual Research Slots</div>
+<div class="font-body-sm text-body-sm text-on-primary font-medium">Fridays: 11:00 AM – 1:00 PM</div>
+<div class="text-[12px] text-on-primary/60">By appointment only (Google Calendar)</div>
+</div>
+</div>
+</div>
+<a class="w-full py-2.5 px-4 bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary-fixed-dim transition-colors rounded font-label-md text-label-md font-semibold text-center flex items-center justify-center gap-2 shadow-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+              Reserve 15-Minute Slot
+            </a>
+</div>
+<!-- Academic Advising & Letter of Recommendation Policy -->
+<div class="bg-surface-container-low rounded-xl p-6 shadow-sm space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">assignment_turned_in</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Recommendation Policy</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              I am glad to support dedicated students applying for graduate programs, fellowships, and academic faculty roles under the following protocols:
+            </p>
+<ul class="space-y-2.5 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px] mt-0.5 shrink-0">check_circle</span>
+<span class="">Must have completed at least one upper-division course or engaged in 2+ quarters of lab research.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px] mt-0.5 shrink-0">check_circle</span>
+<span class="">Minimum <strong>4 weeks prior notice</strong> before the earliest deadline.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px] mt-0.5 shrink-0">check_circle</span>
+<span class="">Provide a compiled portfolio: CV, transcript, statement of purpose draft, and organized deadline ledger.</span>
+</li>
+</ul>
+<div class="pt-2">
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors flex items-center gap-1" href="#">
+                View Submission Dossier Guidelines →
+              </a>
+</div>
+</div>
+<!-- Academic Integrity & Generative AI Policy Module -->
+<div class="bg-surface-container rounded-xl p-6 shadow-sm space-y-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">policy</span>
+<h4 class="font-label-uppercase text-label-uppercase text-primary tracking-wider uppercase font-semibold">
+                Honor Code &amp; AI Directives
+              </h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">All coursework is governed strictly by the Faculty of Engineering Academic Integrity Code. While frontier generative AI tools may be consulted for debugging or conceptual intuition, all submitted mathematical proofs, code submissions, and philosophical essays must cite synthetic tools transparently and reflect primary personal authorship.</p>
+<div class="p-3 bg-surface-container-high rounded text-xs font-mono text-on-surface-variant">
+              Policy Ref: CS-PED-2024.B • Strict Zero-Tolerance on Unattributed LLM Synthesis.
+            </div>
+</div>
+<!-- Academic Classroom Statistics Snapshot -->
+<div class="bg-surface-container-low rounded-xl p-6 shadow-sm">
+<h4 class="font-label-uppercase text-label-uppercase text-secondary tracking-widest uppercase mb-4">
+              Pedagogical Impact Snapshot
+            </h4>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface p-3 rounded">
+<div class="font-headline-lg text-headline-lg text-primary leading-none mb-1">1,850+</div>
+<div class="font-label-uppercase text-label-uppercase text-on-surface-variant">Students Instructed</div>
+</div>
+<div class="bg-surface p-3 rounded">
+<div class="font-headline-lg text-headline-lg text-primary leading-none mb-1">4.84</div>
+<div class="font-label-uppercase text-label-uppercase text-on-surface-variant">Average Course Rating / 5.0</div>
+</div>
+<div class="bg-surface p-3 rounded">
+<div class="font-headline-lg text-headline-lg text-primary leading-none mb-1">18</div>
+<div class="font-label-uppercase text-label-uppercase text-on-surface-variant">Ph.D. Teaching Mentors</div>
+</div>
+<div class="bg-surface p-3 rounded">
+<div class="font-headline-lg text-headline-lg text-primary leading-none mb-1">2</div>
+<div class="font-label-uppercase text-label-uppercase text-on-surface-variant">Excellence in Teaching Awards</div>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for active course links and notification feedback
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      if (targetId && targetId !== '#') {
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          e.preventDefault();
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      }
+    });
+  });
+</script>
+{{ end }}

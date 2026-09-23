@@ -1,0 +1,281 @@
+{
+  "pageHeader": {
+    "supertitle": "Programmatic Research Overview \u2022 Faculty of Engineering \u2022 Electrical & Computer Engineering",
+    "title": "Research Thrusts & The Mansouri Systems Laboratory",
+    "quote": "\u201cInvestigating the intersection of verifiable machine intelligence, neuro-symbolic reasoning, and sociotechnical ethics.\u201d",
+    "metrics": [
+      {
+        "value": "14",
+        "label": "Active Grants",
+        "color": "primary"
+      },
+      {
+        "value": "2.4 PFLOPS",
+        "label": "Lab Compute",
+        "color": "secondary"
+      },
+      {
+        "value": "18",
+        "label": "Fellows & RAs",
+        "color": "primary"
+      }
+    ]
+  },
+  "editorial": {
+    "supertitle": "Philosophical Mandate",
+    "title": "Toward provably sound systems that mirror human deductive integrity.",
+    "body": "The Vance Cognitive Systems Laboratory at Stanford bridges pure mathematical logic and modern statistical learning. Our inquiry is grounded in the conviction that mission-critical computation cannot rely on black-box heuristics alone. By unifying formal proofs with high-capacity neural representations, we construct autonomous architectures that offer provable bounds on robustness, veracity, and human alignment.",
+    "tags": [
+      "Symbolic Synthesis",
+      "Formal Verification",
+      "Algorithmic Auditing",
+      "Latent Geometry"
+    ],
+    "image": {
+      "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDBiSselKUlJMCPLQhL_tqModKNcumtd5SsPG4DG-BRwLzoxTVx646LBBeZoDls4A0jKoIEPevX1S_A93iFQw4BedBg4yG6sXu5X6w8nB_oqh91RIZlwuEbyX44hXemNiYD-I8h06E87TSF4MUu6hqxflWKkuyoQZFySDVZk4p6wCqp5iK6lUZc7VTdhJl2ZyQieANOgA2wLDRadS60I4AIobBQum_ckMP13rdNhjZyXih9W-Bc_nw",
+      "alt": "An expansive, sunlit Stanford engineering laboratory with graduate researchers examining high-dimensional tensor graphs and algebraic schematics on large glass boards. Ambient warm afternoon California sunlight, architectural limestone elements, modern server rack glass enclosures, polished dark desks, dignified academic atmosphere."
+    },
+    "location": "Gates Hall Wing 4 \u2022 Computational Core",
+    "est": "EST. 2018"
+  },
+  "thrustsSection": {
+    "supertitle": "Foundational Pillars",
+    "title": "Core Research Thrusts",
+    "description": "Each thrust operates as a dedicated theoretical cluster supporting doctoral fellows, published monographs, and peer-reviewed artifacts.",
+    "thrusts": [
+      {
+        "borderColor": "secondary",
+        "supertitle": "Thrust I",
+        "icon": "verified",
+        "title": "Verifiable & Interpretable AI",
+        "description": "Establishing rigorous mathematical guarantees for deep representations. We construct automated SMT-solver pipelines that verify neural networks against perturbation bounds, out-of-distribution hallucinations, and safety invariance specifications.",
+        "grantsTitle": "Active Grants & Programs",
+        "grants": "NSF CAREER #2219084 \u2022 DARPA Assured Autonomy (FA8750-20-C-0518)",
+        "linkText": "Explore Verifiable Systems Pipeline",
+        "linkUrl": "#"
+      },
+      {
+        "borderColor": "primary",
+        "supertitle": "Thrust II",
+        "icon": "account_tree",
+        "title": "Neuro-Symbolic Cognitive Architectures",
+        "description": "Synthesizing differentiable learning mechanisms with explicit symbolic knowledge graphs and automated theorem proving. We formulate hybrid engines capable of multi-step deductive reasoning, mathematical discovery, and self-correcting logic.",
+        "grantsTitle": "Active Grants & Programs",
+        "grants": "Office of Naval Research (ONR) N00014-22-1-2311 \u2022 Sloan Research Fellowship",
+        "linkText": "Read Symbolic Proof Repositories",
+        "linkUrl": "#"
+      },
+      {
+        "borderColor": "secondary",
+        "supertitle": "Thrust III",
+        "icon": "balance",
+        "title": "Sociotechnical Fairness & Governance",
+        "description": "Conducting empirical post-market audits on large models deployed across healthcare diagnostics, judicial risk instruments, and public allocation frameworks. Formulating reproducible auditing criteria and mathematical definitions of structural fairness.",
+        "grantsTitle": "Active Grants & Programs",
+        "grants": "Stanford HAI Policy Seed Grant \u2022 MacArthur Ethics & Tech Initiative",
+        "linkText": "View Governance Whitepapers",
+        "linkUrl": "#"
+      }
+    ]
+  },
+  "architectureSection": {
+    "supertitle": "Architectural Blueprint",
+    "title": "Cross-Thrust Theoretical Integration",
+    "legends": [
+      {
+        "color": "primary",
+        "label": "Neural Foundations"
+      },
+      {
+        "color": "secondary",
+        "label": "Deductive Proofs"
+      },
+      {
+        "color": "outline-variant",
+        "label": "Policy Interface"
+      }
+    ],
+    "figureCaption": "Figure 1.1: Canonical architecture for closed-loop certification deployed within Vance Lab testbeds.",
+    "diagramNodes": [
+      {
+        "stage": "STAGE I",
+        "title": "High-Dim Tensors",
+        "subtitle": "Self-Supervised Priors"
+      },
+      {
+        "stage": "STAGE II \u2022 CORE",
+        "title": "Neuro-Symbolic Bridge",
+        "subtitle": "SMT Verification / Logic"
+      },
+      {
+        "stage": "STAGE III",
+        "title": "Proof Certificates",
+        "subtitle": "Bounded Error Envelope"
+      },
+      {
+        "stage": "AUDITED",
+        "title": "Public Trust",
+        "subtitle": "Fair Execution"
+      }
+    ]
+  },
+  "grantsSection": {
+    "supertitle": "Sponsored Research",
+    "title": "Active Grants & Endowments",
+    "filters": [
+      {
+        "id": "filter-all",
+        "label": "All Sources",
+        "buttonClass": "bg-primary text-on-primary"
+      },
+      {
+        "id": "filter-fed",
+        "label": "Federal",
+        "buttonClass": "bg-surface-container text-on-surface-variant hover:text-primary"
+      },
+      {
+        "id": "filter-found",
+        "label": "Foundations",
+        "buttonClass": "bg-surface-container text-on-surface-variant hover:text-primary"
+      }
+    ],
+    "tableHeaders": [
+      {
+        "label": "Project / Award Title",
+        "class": "text-primary"
+      },
+      {
+        "label": "Sponsoring Agency",
+        "class": ""
+      },
+      {
+        "label": "Award Identification",
+        "class": ""
+      },
+      {
+        "label": "Period",
+        "class": ""
+      },
+      {
+        "label": "Status / Deliverable",
+        "class": ""
+      }
+    ],
+    "grants": [
+      {
+        "title": "Robust Compressed-Domain Video Watermarking",
+        "subtitle": "Automated induction proofs for distributed neural agents",
+        "agency": "National Science Foundation",
+        "agencyClass": "bg-primary-fixed text-on-primary-fixed",
+        "id": "NSF-CCF #2219084",
+        "period": "2022 \u2013 2027",
+        "statusColor": "secondary",
+        "statusText": "Mid-Cycle Review",
+        "description": "Investigating real-time, low-overhead embedding techniques for H.264 video streams."
+      },
+      {
+        "title": "AI-Generated Content Quality Assessment",
+        "subtitle": "Safe domain adaptation under adversarial environmental shift",
+        "agency": "DARPA / I2O",
+        "agencyClass": "bg-primary-fixed text-on-primary-fixed",
+        "id": "FA8750-20-C-0518",
+        "period": "2021 \u2013 2025",
+        "statusColor": "primary",
+        "statusText": "Final Testbed Phase",
+        "description": "Formulating reliable metrics to evaluate and detect synthesized imagery and deepfakes."
+      },
+      {
+        "title": "Action Recognition for Assisted Living",
+        "subtitle": "Synthesizing constructive lemmas via guided neural tree-search",
+        "agency": "Office of Naval Research",
+        "agencyClass": "bg-surface-container-high text-on-surface",
+        "id": "N00014-22-1-2311",
+        "period": "2023 \u2013 2026",
+        "statusColor": "secondary",
+        "statusText": "Active \u2022 Year 2",
+        "description": "Developing privacy-preserving, efficient vision models for healthcare monitoring."
+      },
+      {
+        "title": "Advanced Steganalysis in Wavelet Domains",
+        "subtitle": "Sociotechnical benchmarks for clinical diagnostic governance",
+        "agency": "Alfred P. Sloan Foundation",
+        "agencyClass": "bg-secondary-fixed text-on-secondary-fixed",
+        "id": "FG-2023-19942",
+        "period": "2023 \u2013 2025",
+        "statusColor": "secondary",
+        "statusText": "Toolchain V2 Released",
+        "description": "Detecting hidden payloads in high-resolution digital media."
+      }
+    ]
+  },
+  "facilitiesSection": {
+    "supertitle": "Empirical Environment",
+    "title": "Lab Facilities & Compute Cluster",
+    "compute": {
+      "tag": "Turing Compute Pod",
+      "status": "Online \u2022 99.8% Uptime",
+      "title": "The Helios AI-HPC Array",
+      "description": "Dedicated dedicated compute allocation housing 48 NVIDIA H100 SXM5 GPUs tied together via Quantum-2 InfiniBand interconnects. Custom-configured for dense SMT solving algorithms, billion-parameter language-logic co-training, and verifiable weight extraction.",
+      "stats": [
+        {
+          "value": "48 \u00d7 H100",
+          "label": "GPU Subsystems"
+        },
+        {
+          "value": "1.2 PB",
+          "label": "NVMe Fast Fabric"
+        },
+        {
+          "value": "Slurm",
+          "label": "Fairshare Scheduler"
+        }
+      ],
+      "linkText": "Cluster Access Protocols & Job Queues",
+      "linkUrl": "#"
+    },
+    "physical": {
+      "supertitle": "Physical Space",
+      "icon": "meeting_room",
+      "title": "Gates Commons 418",
+      "description": "An open-plan intellectual workshop designed for continuous debate, whiteboarding, and seminar discussions. Equipped with four multi-touch digital ideation walls and synchronous video nodes connecting international collaborators.",
+      "image": {
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAJ--hpOYO0b4_75PLjzCR3chAfbI2Oe8iBNBkAnq33X1tkv9nEOVMUtR3ZGaEmRvzfjo-Kd5qMtlFRhWnd76TfR_o0VdYas_q2_oDF3vXHu3RikHgZ7NvAFrQebruauo-7xiIMp3NkxqvdSy8nm3vAuzpuWkmNhPAS4dLR0YE9Zq2nPdw6ITmSwzkMUwiogOLbBSAJMjkdx-pl9KQCyssNTDWk1vN9EeXkAJqoJxSIuw5X_Cmuiaw",
+        "alt": "Modern collegiate seminar library room in Gates Building at Stanford, featuring rich cherry wood seminar table, floor to ceiling whiteboards filled with symbolic logic equations, comfortable ergonomic seating, warm ambient task lighting, and architectural windows."
+      },
+      "location": "Stanford Gates CS Bldg \u2022 Wing 400 \u2022 Office Suite 418"
+    }
+  },
+  "joinSection": {
+    "supertitle": "Academic Opportunities",
+    "title": "Join the Vance Laboratory",
+    "description": "We seek scholars with exceptional theoretical foundations, strong algorithmic instincts, and an eagerness to question established heuristics.",
+    "roles": [
+      {
+        "number": "1",
+        "numberClass": "bg-primary text-on-primary",
+        "title": "Prospective Ph.D. Students",
+        "description": "Admissions are conducted solely via the Stanford Computer Science Ph.D. program. Please mention <strong>Prof. Vance</strong> in your statement of purpose and select Systems / AI as your primary fields.",
+        "action": "Deadline: December 1st Annually",
+        "isLink": false
+      },
+      {
+        "number": "2",
+        "numberClass": "bg-secondary text-on-secondary",
+        "title": "Postdoctoral Candidates",
+        "description": "We review postdoc applications on a rolling basis. Candidates must possess demonstrated publication records at top-tier venues (NeurIPS, ICML, POPL, CAV, or FAccT).",
+        "action": "Submit CV & 3 Selected Papers",
+        "isLink": true,
+        "linkUrl": "#"
+      },
+      {
+        "number": "3",
+        "numberClass": "bg-primary-container text-on-primary",
+        "title": "Stanford Undergrads / MS",
+        "description": "Undergraduates and MS candidates seeking CURIS or research credits should have completed CS221 or CS229, plus formal proofs coursework (CS103/CS154).",
+        "action": "View Open Quarter Projects",
+        "isLink": true,
+        "linkUrl": "#"
+      }
+    ]
+  }
+}

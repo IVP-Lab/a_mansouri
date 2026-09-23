@@ -1,0 +1,72 @@
+[
+  {
+    "code": "ECE 435",
+    "level": "Graduate Level \u2022 4 Units",
+    "grading": "Letter Grade Only",
+    "title": "Digital Image and Video Processing",
+    "description": "A comprehensive introduction to two-dimensional signals and systems, image enhancement, restoration, compression standards (JPEG, MPEG), and morphological processing. Includes programming assignments on real-world visual media.",
+    "lectures": "Mon / Wed 1:30 \u2013 3:00 PM",
+    "location": "Packard Auditorium 101",
+    "text": "Gonzalez & Woods, <em>Digital Image Processing</em> (Pearson)",
+    "prerequisites": "CS 229 or STATS 214; linear algebra, multivariate calculus",
+    "tas": [
+      {
+        "initials": "AK",
+        "name": "Amina Khatri",
+        "details": "Thu 4\u20136 PM \u2022 Gates 290"
+      },
+      {
+        "initials": "LR",
+        "name": "Lucas Rossi",
+        "details": "Fri 10\u201312 PM \u2022 Packard 02"
+      },
+      {
+        "initials": "MZ",
+        "name": "Mei-Ling Zhou",
+        "details": "Wed 5\u20137 PM \u2022 Zoom"
+      }
+    ],
+    "syllabus_link": "#",
+    "slides_link": "#",
+    "active": true
+  },
+  {
+    "code": "ECE 570",
+    "level": "Undergraduate Core \u2022 4 Units",
+    "grading": "Ways of Thinking: Ethics / Formal",
+    "title": "Multimedia Security & Digital Watermarking",
+    "description": "Advanced graduate course on the theory and implementation of digital watermarking, steganography, steganalysis, and copy-move forgery detection. Explores vulnerabilities in compressed domains (H.264, HEVC) and AI-generated media.",
+    "lectures": "Tue / Thu 10:00 \u2013 11:30 AM",
+    "location": "Gates Hall B01 (Hewlett 200 Overflow)",
+    "prerequisites": "",
+    "sections": "Mandatory 50-min weekly dialectic labs",
+    "format": "3 Policy Position Papers + Final Capstone Case",
+    "syllabus_link": "#",
+    "grid_link": "#",
+    "active": true
+  },
+  {
+    "code": "ECE 630",
+    "level": "2021 \u2013 2023 (Spring)",
+    "title": "Advanced Computer Vision",
+    "description": "Deep convolutional architectures for action recognition, object detection, and semantic segmentation in video sequences.",
+    "archive_link": "#",
+    "active": false
+  },
+  {
+    "code": "ECE 320",
+    "level": "2018 \u2013 2020 (Winter/Autumn)",
+    "title": "Signals and Systems",
+    "description": "Continuous and discrete-time signals, Fourier analysis, Laplace transforms, and linear time-invariant systems.",
+    "archive_link": "#",
+    "active": false
+  },
+  {
+    "code": "ECE 685",
+    "level": "Special Topics Seminar",
+    "title": "Quality Assessment of Digital Media",
+    "description": "Seminar on subjective and objective metrics (PSNR, SSIM, VMAF) for image and video quality evaluation, including perceptual models.",
+    "archive_link": "#",
+    "active": false
+  }
+]

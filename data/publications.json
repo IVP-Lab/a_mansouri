@@ -1,0 +1,1138 @@
+[
+  {
+    "id": "pub_00566c58",
+    "year": "2010",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "A low complexity video watermarking in H. 264 compressed domain",
+    "authorsHtml": "<strong class=\"font-semibold text-primary\">A. Mansouri</strong>, AM Aznaveh, F Torkamani-Azar, F Kurugollu",
+    "venue": "IEEE Transactions on Information Forensics and Security 5 (4), 649-657",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&citation_for_view=eK03yPgAAAAJ:u-x6o8ySG0sC"
+    }
+  },
+  {
+    "id": "pub_6709ec76",
+    "year": "2009",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "Image quality assessment using the singular value decomposition theorem",
+    "authorsHtml": "<strong class=\"font-semibold text-primary\">A. Mansouri</strong>, AM Aznaveh, F Torkamani-Azar, JA Jahanshahi",
+    "venue": "Optical Review 16 (2), 49-53",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&citation_for_view=eK03yPgAAAAJ:d1gkVwhDpl0C"
+    }
+  },
+  {
+    "id": "pub_364c7265",
+    "year": "2009",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "SVD-based digital image watermarking using complex wavelet transform",
+    "authorsHtml": "<strong class=\"font-semibold text-primary\">A. Mansouri</strong>, A Mahmoudi Aznaveh, F Torkamani Azar",
+    "venue": "Sadhana 34 (3), 393-406",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&citation_for_view=eK03yPgAAAAJ:9yKSN-GCB0IC"
+    }
+  },
+  {
+    "id": "pub_2b30cffc",
+    "year": "2014",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Adaptive matching for copy-move forgery detection",
+    "authorsHtml": "M Zandi, A Mahmoudi-Aznaveh, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2014 IEEE international workshop on information forensics and security (WIFS\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&citation_for_view=eK03yPgAAAAJ:qjMakFHDy7sC"
+    }
+  },
+  {
+    "id": "pub_94f33ede",
+    "year": "2024",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "NTIRE 2024 quality assessment of AI-generated content challenge",
+    "authorsHtml": "X Liu, X Min, G Zhai, C Li, T Kou, W Sun, H Wu, Y Gao, Y Cao, Z Zhang, ...",
+    "venue": "2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&citation_for_view=eK03yPgAAAAJ:EUQCXRtRnyEC"
+    }
+  },
+  {
+    "id": "pub_a31cf0b5",
+    "year": "2009",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "Image quality measurement besides distortion type classifying",
+    "authorsHtml": "A Mahmoudi-Aznaveh, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>, F Torkamani-Azar, M Eslami",
+    "venue": "Optical review 16 (1), 30-34",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&citation_for_view=eK03yPgAAAAJ:2osOgNQ5qMEC"
+    }
+  },
+  {
+    "id": "pub_cb43f682",
+    "year": "2021",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Violence detection using pre-trained models",
+    "authorsHtml": "N Honarjoo, A Abdari, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2021 5th International conference on pattern recognition and image analysis\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&citation_for_view=eK03yPgAAAAJ:RGFaLdJalmkC"
+    }
+  },
+  {
+    "id": "pub_e53a3f8d",
+    "year": "2023",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "NTIRE 2023 quality assessment of video enhancement challenge",
+    "authorsHtml": "X Liu, X Min, W Sun, Y Zhang, K Zhang, R Timofte, G Zhai, Y Gao, Y Cao, ...",
+    "venue": "2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&citation_for_view=eK03yPgAAAAJ:fPk4N6BV_jEC"
+    }
+  },
+  {
+    "id": "pub_bedbea0a",
+    "year": "2019",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "SSVD: Structural SVD-based image quality assessment",
+    "authorsHtml": "<strong class=\"font-semibold text-primary\">A. Mansouri</strong>, A Mahmoudi-Aznaveh",
+    "venue": "Signal Processing: Image Communication 74, 54-63",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&citation_for_view=eK03yPgAAAAJ:iH-uZ7U-co4C"
+    }
+  },
+  {
+    "id": "pub_6d620cfb",
+    "year": "2021",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "Quality assessment of screen content images in wavelet domain",
+    "authorsHtml": "P Cheraaqee, Z Maviz, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>, A Mahmoudi-Aznaveh",
+    "venue": "IEEE Transactions on Circuits and Systems for Video Technology 32 (2), 566-578",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&citation_for_view=eK03yPgAAAAJ:GnPB-g6toBAC"
+    }
+  },
+  {
+    "id": "pub_b414b35c",
+    "year": "2021",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Violence detection using one-dimensional convolutional networks",
+    "authorsHtml": "N Honarjoo, A Abdari, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2021 12th International conference on information and knowledge technology\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&citation_for_view=eK03yPgAAAAJ:lSLTfruPkqcC"
+    }
+  },
+  {
+    "id": "pub_88b51d9a",
+    "year": "2019",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "Toward a secure video watermarking in compressed domain",
+    "authorsHtml": "<strong class=\"font-semibold text-primary\">A. Mansouri</strong>, A Mahmoudi-Aznaveh",
+    "venue": "Journal of Information Security and Applications 48, 102370",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&citation_for_view=eK03yPgAAAAJ:JV2RwH3_ST0C"
+    }
+  },
+  {
+    "id": "pub_35b1fbcf",
+    "year": "2010",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Blind H. 264 Compressed Video Watermarking with Pattern Consideration.",
+    "authorsHtml": "<strong class=\"font-semibold text-primary\">A. Mansouri</strong>, AM Aznaveh, F Torkamani-Azar",
+    "venue": "ICASSP, 1754-1757",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&citation_for_view=eK03yPgAAAAJ:UeHWp8X0CEIC"
+    }
+  },
+  {
+    "id": "pub_122c3213",
+    "year": "2013",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "A new SVD-based image quality assessment",
+    "authorsHtml": "M Esmaeilpour, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>, A Mahmoudi-Aznaveh",
+    "venue": "2013 8th Iranian Conference on Machine Vision and Image Processing (MVIP\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&citation_for_view=eK03yPgAAAAJ:Se3iqnhoufwC"
+    }
+  },
+  {
+    "id": "pub_603dedc9",
+    "year": "2019",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "A low complexity wavelet-based blind image quality evaluator",
+    "authorsHtml": "M Heydari, P Cheraaqee, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>, A Mahmoudi-Aznaveh",
+    "venue": "Signal Processing: Image Communication 74, 280-288",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&citation_for_view=eK03yPgAAAAJ:bEWYMUwI8FkC"
+    }
+  },
+  {
+    "id": "pub_a6bac71c",
+    "year": "2021",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Perceptually optimized loss function for image super-resolution",
+    "authorsHtml": "A Arezoomand, P Cheraaqee, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2021 7th International Conference on Signal Processing and Intelligent\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&citation_for_view=eK03yPgAAAAJ:2P1L_qKh6hAC"
+    }
+  },
+  {
+    "id": "pub_e078185c",
+    "year": "2024",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "Violence detection in compressed video",
+    "authorsHtml": "N Honarjoo, A Abdari, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "Multimedia Tools and Applications 83 (29), 73703-73716",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&citation_for_view=eK03yPgAAAAJ:_xSYboBqXhAC"
+    }
+  },
+  {
+    "id": "pub_03676ef3",
+    "year": "2017",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "Digital image steganalysis based on the reciprocal singular value curve",
+    "authorsHtml": "R Nouri, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "Multimedia Tools and Applications 76 (6), 8745-8756",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&citation_for_view=eK03yPgAAAAJ:roLk4NBRz8UC"
+    }
+  },
+  {
+    "id": "pub_c277c42c",
+    "year": "2020",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "A new image dataset for document corner localization",
+    "authorsHtml": "SB Dizaj, M Soheili, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2020 International Conference on Machine Vision and Image Processing (MVIP), 1-4",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&citation_for_view=eK03yPgAAAAJ:YFjsv_pBGBYC"
+    }
+  },
+  {
+    "id": "pub_c76f9628",
+    "year": "2009",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Motion consideration in H. 264/AVC compressed video watermarking",
+    "authorsHtml": "<strong class=\"font-semibold text-primary\">A. Mansouri</strong>, F Torkamani-Azar, A Mahmoudi Aznaveh",
+    "venue": "Pacific-Rim Conference on Multimedia, 877-886",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&citation_for_view=eK03yPgAAAAJ:Y0pCki6q_DkC"
+    }
+  },
+  {
+    "id": "pub_2cf3231d",
+    "year": "2010",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "Reversible watermarking using statistical information",
+    "authorsHtml": "A Mahmoudi Aznaveh, F Torkamani-Azar, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>, F Kurugollu",
+    "venue": "EURASIP Journal on Advances in Signal Processing 2010 (1), 738972",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:zYLM7Y9cAGgC"
+    }
+  },
+  {
+    "id": "pub_b08aff6a",
+    "year": "2015",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Blind image steganalysis based on reciprocal singular value curve",
+    "authorsHtml": "R Nouri, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2015 9th Iranian Conference on Machine Vision and Image Processing (MVIP\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:WF5omc3nYNoC"
+    }
+  },
+  {
+    "id": "pub_0f9a99be",
+    "year": "2008",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Secure digital image watermarking based on SVD-DCT",
+    "authorsHtml": "<strong class=\"font-semibold text-primary\">A. Mansouri</strong>, A Mahmoudi Aznaveh, F Torkamani Azar",
+    "venue": "Computer Society of Iran Computer Conference, 645-652",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:IjCSPb-OGe4C"
+    }
+  },
+  {
+    "id": "pub_c31c46e0",
+    "year": "2025",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "Feature extraction and deep learning",
+    "authorsHtml": "A Mahyar, H Motamednia, P Cheraaqee, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "Dimensionality Reduction in Machine Learning, 211-243",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:NhqRSupF_l8C"
+    }
+  },
+  {
+    "id": "pub_a7119f6c",
+    "year": "2022",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Adaptive frame selection in two dimensional convolutional neural network action recognition",
+    "authorsHtml": "A Rahnama, A Esfahani, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2022 8th Iranian Conference on Signal Processing and Intelligent Systems\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:u_35RYKgDlwC"
+    }
+  },
+  {
+    "id": "pub_e240d96b",
+    "year": "2022",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "No-reference video quality assessment by deep feature maps relations",
+    "authorsHtml": "AH Bakhtiari, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2022 12th International Conference on Computer and Knowledge Engineering\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:zA6iFVUQeVQC"
+    }
+  },
+  {
+    "id": "pub_82c97348",
+    "year": "2022",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "JPEG steganalysis using the relations between DCT coefficients",
+    "authorsHtml": "SMS Khalilollahi, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2022 International Conference on Machine Vision and Image Processing (MVIP), 1-4",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:ldfaerwXgEUC"
+    }
+  },
+  {
+    "id": "pub_d000f999",
+    "year": "2019",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Action recognition in compressed domain using residual information",
+    "authorsHtml": "A Abdari, P Amirjan, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2019 4th International Conference on Pattern Recognition and Image Analysis\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:M3NEmzRMIkIC"
+    }
+  },
+  {
+    "id": "pub_aa6e4245",
+    "year": "2007",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Face data base compression by hotelling transform using segmentation",
+    "authorsHtml": "AM Aznaveh, FT Azar, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2007 9th International Symposium on Signal Processing and Its Applications, 1-4",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:Tyk-4Ss8FVUC"
+    }
+  },
+  {
+    "id": "pub_48f81995",
+    "year": "2024",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "Feature maps correlation-based video quality assessment",
+    "authorsHtml": "AH Bakhtiari, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "Multimedia Tools and Applications 83 (23), 63309-63328",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:yD5IFk8b50cC"
+    }
+  },
+  {
+    "id": "pub_22a311e8",
+    "year": "2023",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Quality assessment of screen content videos",
+    "authorsHtml": "H Motamednia, P Cheraaqee, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>, A Mahmoudi-Aznaveh",
+    "venue": "2023 6th International Conference on Pattern Recognition and Image Analysis\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:dfsIfKJdRG4C"
+    }
+  },
+  {
+    "id": "pub_4b2f2d23",
+    "year": "2022",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "Speeding up action recognition using dynamic accumulation of residuals in compressed domain",
+    "authorsHtml": "A Abdari, P Amirjan, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "arXiv preprint arXiv:2209.14757",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:pqnbT2bcN3wC"
+    }
+  },
+  {
+    "id": "pub_48c929c3",
+    "year": "2017",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Image retargeting quality assessment using structural similarity and information preservation rate",
+    "authorsHtml": "F Afshar, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>, M Zandi",
+    "venue": "2017 10th Iranian Conference on Machine Vision and Image Processing (MVIP\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:5nxA0vEk-isC"
+    }
+  },
+  {
+    "id": "pub_f090554f",
+    "year": "2009",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "A new approach in reversible watermarking",
+    "authorsHtml": "A Mahmoudi Aznaveh, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>, F Torkamani-Azar",
+    "venue": "International Workshop on Digital Watermarking, 241-251",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:W7OEmFMy1HYC"
+    }
+  },
+  {
+    "id": "pub_d95c7e21",
+    "year": "2024",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "Temporal relations of informative frames in action recognition",
+    "authorsHtml": "A Rahnama, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2024 13th Iranian/3rd International Machine Vision and Image Processing\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:f2IySw72cVMC"
+    }
+  },
+  {
+    "id": "pub_f6f08578",
+    "year": "2022",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "The effect of perceptual loss for video super-resolution",
+    "authorsHtml": "M Hosseinkhani, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2022 International Conference on Machine Vision and Image Processing (MVIP), 1-5",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:M05iB0D1s5AC"
+    }
+  },
+  {
+    "id": "pub_9243b264",
+    "year": "2021",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "A perceptual loss for screen content image super-resolution",
+    "authorsHtml": "H Sekhavaty, M Hosseinkhani, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2021 12th International Conference on Information and Knowledge Technology\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:RYcK_YlVTxYC"
+    }
+  },
+  {
+    "id": "pub_748dea4f",
+    "year": "2018",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "Parallel Motion Estimation Based on GPU and Combined GPU-CPU",
+    "authorsHtml": "L Grandinetti",
+    "venue": "Big Data and HPC: Ecosystem and Convergence, 210",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:ns9cj8rnVeAC"
+    }
+  },
+  {
+    "id": "pub_29fadf9d",
+    "year": "2017",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Video watermarking using quantized coefficients and motion vectors analysis",
+    "authorsHtml": "P Amirjan, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2017 Iranian Conference on Electrical Engineering (ICEE), 1560-1563",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:hqOjcs7Dif8C"
+    }
+  },
+  {
+    "id": "pub_d62a050c",
+    "year": "2017",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Non-local means denoising based on SVD basis images",
+    "authorsHtml": "M Seyedebrahim, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2017 3rd International Conference on Pattern Recognition and Image Analysis\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:UebtZRa9Y70C"
+    }
+  },
+  {
+    "id": "pub_74639a15",
+    "year": "2010",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "MPEG-2 video watermarking using pattern consideration",
+    "authorsHtml": "<strong class=\"font-semibold text-primary\">A. Mansouri</strong>, AM Aznaveh, F Torkamani-Azar",
+    "venue": "2010 20th International Conference on Pattern Recognition, 2428-2431",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:eQOLeE2rZwMC"
+    }
+  },
+  {
+    "id": "pub_3c518330",
+    "year": "2009",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Toward quality improvement in location map free reversible watermarking",
+    "authorsHtml": "AM Aznaveh, F Torkamani-Azar, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "Pacific-Rim Conference on Multimedia, 867-876",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:ufrVoPGSRksC"
+    }
+  },
+  {
+    "id": "pub_0a764fe1",
+    "year": "2024",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Exploring Feature Map Correlations for Effective Fake Face Detection",
+    "authorsHtml": "N Honarjoo, F Taher, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2024 11th International Symposium on Telecommunications (IST), 200-204",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:abG-DnoFyZgC"
+    }
+  },
+  {
+    "id": "pub_c76f3208",
+    "year": "2022",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Towards the efficiency of the fusion step in language-based fashion image editing",
+    "authorsHtml": "M Darvish, J Shanbehzadeh, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2022 27th International Computer Conference, Computer Society of Iran (CSICC\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:HoB7MX3m0LUC"
+    }
+  },
+  {
+    "id": "pub_637eb358",
+    "year": "2019",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Incorporating gradient direction for assessing multiple distortions",
+    "authorsHtml": "P Cheraaqee, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>, A Mahmoudi-Aznaveh",
+    "venue": "2019 4th International Conference on Pattern Recognition and Image Analysis\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:maZDTaKrznsC"
+    }
+  },
+  {
+    "id": "pub_d8e362cd",
+    "year": "2007",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Face tracking by 3-D dual-tree complex wavelet transform using support vector machine",
+    "authorsHtml": "<strong class=\"font-semibold text-primary\">A. Mansouri</strong>, FT Azar, AM Aznaveh",
+    "venue": "2007 9th International Symposium on Signal Processing and Its Applications, 1-4",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:YsMSGLbcyi4C"
+    }
+  },
+  {
+    "id": "pub_89133589",
+    "year": "2025",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "No Reference Screen Content Image Quality Assessment Using Proxy Labels",
+    "authorsHtml": "Z Yarahmady, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>, A Khakpour",
+    "venue": "2025 7th International Conference on Pattern Recognition and Image Analysis\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:P5F9QuxV20EC"
+    }
+  },
+  {
+    "id": "pub_e47d25ec",
+    "year": "2025",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "The Effect of Training Strategy on Image Classification Using Representations of Learning-Based Image Compression",
+    "authorsHtml": "F Saadati-Monem, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>, A Mahmoudi-Aznaveh, H Motamednia",
+    "venue": "2025 7th International Conference on Pattern Recognition and Image Analysis\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:1sJd4Hv_s6UC"
+    }
+  },
+  {
+    "id": "pub_580b7fc2",
+    "year": "2024",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "Compressed image quality assessment using stacking",
+    "authorsHtml": "SF Hosseini-Benvidi, H Motamednia, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>, M Raei, ...",
+    "venue": "arXiv preprint arXiv:2402.00993",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:D03iK_w7-QYC"
+    }
+  },
+  {
+    "id": "pub_43f18f81",
+    "year": "2024",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Flexible image decoding in learned image compression",
+    "authorsHtml": "H Motamednia, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>, FS Monem, A Mahmoudi-Aznaveh",
+    "venue": "Workshop on Machine Learning and Compression, NeurIPS 2024",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:b0M2c_1WBrUC"
+    }
+  },
+  {
+    "id": "pub_caf52267",
+    "year": "2023",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "Compressed domain human fall detection using deep features",
+    "authorsHtml": "M Darvish, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:cFHS6HbyZ2cC"
+    }
+  },
+  {
+    "id": "pub_01c550ef",
+    "year": "2023",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "The effect of variance-based patch selection on no-reference image quality assessment",
+    "authorsHtml": "SF Hosseini-Benvidi, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2023 6th International Conference on Pattern Recognition and Image Analysis\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:4OULZ7Gr8RgC"
+    }
+  },
+  {
+    "id": "pub_ac28453b",
+    "year": "2022",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "An improvement of hidden Markov model for stock market predictions",
+    "authorsHtml": "SK Chavoshi, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>, S Sheidani",
+    "venue": "International Journal of Reasoning-based Intelligent Systems 14 (2-3), 144-153",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:rO6llkc54NcC"
+    }
+  },
+  {
+    "id": "pub_ce0a9d61",
+    "year": "2021",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "Document Localization in Images Taken by Smartphones Using a Fully Convolutional Neural Network",
+    "authorsHtml": "S Baniadamdizaj, M Soheili, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:J_g5lzvAfSwC"
+    }
+  },
+  {
+    "id": "pub_bd7669a6",
+    "year": "2020",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Exploring the gradient for video quality assessment",
+    "authorsHtml": "H Motamednia, P Cheraaqee, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2020 International Conference on Machine Vision and Image Processing (MVIP), 1-7",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:NMxIlDl6LWMC"
+    }
+  },
+  {
+    "id": "pub_8a56b6d8",
+    "year": "2019",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Action Recognition Using Temporal Partitioning of Motion Information",
+    "authorsHtml": "P Amirjan, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2019 27th Iranian Conference on Electrical Engineering (ICEE), 1946-1950",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:k_IJM867U9cC"
+    }
+  },
+  {
+    "id": "pub_85221fe0",
+    "year": "2017",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Gradient based full reference video quality assessment",
+    "authorsHtml": "M Seyedebrahim, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2017 10th Iranian Conference on Machine Vision and Image Processing (MVIP\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:8k81kl-MbHgC"
+    }
+  },
+  {
+    "id": "pub_e0f80c7b",
+    "year": "2025",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Variance-Guided Feature Correlation for Deep Full-Reference Image Quality Assessment",
+    "authorsHtml": "A Khakpour, S Yademellat, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2025 15th International Conference on Computer and Knowledge Engineering\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:KxtntwgDAa4C"
+    }
+  },
+  {
+    "id": "pub_45e2c2e7",
+    "year": "2025",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "The Role of Fine-Tuned Feature Map Correlation in Video Quality Assessment",
+    "authorsHtml": "E Asadi, P Pourmatin, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2025 7th International Conference on Pattern Recognition and Image Analysis\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:nb7KW1ujOQ8C"
+    }
+  },
+  {
+    "id": "pub_9e600eb8",
+    "year": "2025",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Transformer-based Action Recognition Employing Informative Frames",
+    "authorsHtml": "A Rahnama, AP Bordbari, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2025 7th International Conference on Pattern Recognition and Image Analysis\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:CHSYGLWDkRkC"
+    }
+  },
+  {
+    "id": "pub_e5fd04fd",
+    "year": "2025",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "MIPI 2025 Challenge on Detailed Image Quality Assessment: Methods and Results",
+    "authorsHtml": "W Liao, H Fan, Y Xu, M Song, Q Ma, S Han, C Guo, C Li, J Sun, X Yue, ...",
+    "venue": "Proceedings of the IEEE/CVF International Conference on Computer Vision\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:xtRiw3GOFMkC"
+    }
+  },
+  {
+    "id": "pub_45ffd8a3",
+    "year": "2024",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "DCT-based Perceptual Loss For Screen Content Image Super-Resolution",
+    "authorsHtml": "H Sekhavaty-Moghadam, M Hosseinkhani, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:bFI3QPDXJZMC"
+    }
+  },
+  {
+    "id": "pub_fd46356c",
+    "year": "2024",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "The Effect of Uncertainty on No-Reference Image Quality Assessment",
+    "authorsHtml": "M Raei, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2024 13th Iranian/3rd International Machine Vision and Image Processing\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:pyW8ca7W8N0C"
+    }
+  },
+  {
+    "id": "pub_f707242b",
+    "year": "2024",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "Compressed image quality assessment using stacking",
+    "authorsHtml": "S Farhad Hosseini-Benvidi, H Motamednia, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>, M Raei, ...",
+    "venue": "arXiv e-prints, arXiv: 2402.00993",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:a0OBvERweLwC"
+    }
+  },
+  {
+    "id": "pub_8b4252c5",
+    "year": "2021",
+    "type": "conference",
+    "topics": [
+      "all"
+    ],
+    "title": "Multi-Layer Collaborative Graph with BPR Similarity Embedding for Recommender System",
+    "authorsHtml": "M Ghorbani, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "2021 11th International Conference on Computer Engineering and Knowledge\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:35N4QoGY0k4C"
+    }
+  },
+  {
+    "id": "pub_08b378ac",
+    "year": "2020",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "Color image quality assessment based on structural features",
+    "authorsHtml": "G Rahmaniani, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "MACHINE VISION AND IMAGE PROCESSING 7 (1), 17-28",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:O3NaXMp0MMsC"
+    }
+  },
+  {
+    "id": "pub_9b162be1",
+    "year": "2019",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "Accelerating Decoding Step in Image Captioning on Smartphones",
+    "authorsHtml": "B Samadi, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>, A Mahmoudi-Aznaveh",
+    "venue": "International Congress on High-Performance Computing and Big Data Analysis\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:blknAaTinKkC"
+    }
+  },
+  {
+    "id": "pub_8dd3e23e",
+    "year": "2010",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "Reversible Watermarking Using Statistical Information",
+    "authorsHtml": "<strong class=\"font-semibold text-primary\">A. Mansouri</strong>, A Mahmoudi-Aznaveh, F Torkamani-Azar",
+    "venue": "EURASIP Journal on Advances in Signal Processing 2010 (1)",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:ZHo1McVdvXMC"
+    }
+  },
+  {
+    "id": "pub_05445ba2",
+    "year": "2009",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "Comments on SVD related image compression",
+    "authorsHtml": "AM Aznaveh, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>, F Torkamaniazar",
+    "venue": "Optoelectronics and Advanced Materials-Rapid Communications 3 (August 2009\u00a0\u2026",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:LkGwnXOMwfcC"
+    }
+  },
+  {
+    "id": "pub_9007742d",
+    "year": "0000",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "Compressed domain Action Recognition for Healthcare and Assisted Living",
+    "authorsHtml": "A Abdari, P Amirjan, <strong class=\"font-semibold text-primary\">A. Mansouri</strong>",
+    "venue": "",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:TFP_iSt0sucC"
+    }
+  },
+  {
+    "id": "pub_77704ca6",
+    "year": "0000",
+    "type": "journal",
+    "topics": [
+      "all"
+    ],
+    "title": "System Models Fuzzy Classification Metrics for Scanner Assessment and Vulnerability Reporting.... PKK Loh and D. Subramanian 613 Watermarking and Data Hiding/Embedding A Video\u00a0\u2026",
+    "authorsHtml": "<strong class=\"font-semibold text-primary\">A. Mansouri</strong>, AM Aznaveh, F Torkamani-Azar, F Kurugollu",
+    "venue": "",
+    "tags": [],
+    "abstract": "",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eK03yPgAAAAJ&cstart=20&pagesize=80&citation_for_view=eK03yPgAAAAJ:_FxGoFyzp5QC"
+    }
+  }
+]
