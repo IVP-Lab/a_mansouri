@@ -4,7 +4,9 @@
     "title": "Image and Video Processing Lab",
     "subtitle": "Faculty of Engineering / Computer Engineering",
     "contact_btn": "Contact & Office Hours",
-    "contact_link": "/#contact"
+    "contact_link": "/#contact",
+    "logo_text_primary": "PROF. A. MANSOURI",
+    "logo_text_secondary": "ELECTRICAL & COMPUTER ENG."
   },
   "footer": {
     "logo_url": "https://lh3.googleusercontent.com/aida/AEtjO1X6F50I1M8AVWVkwu3PyHkaWg18-zxP2f5rlcgypL3GyKBQ-JYVauNKzFiP4xVwClND1eKoWjEsT7gAA4IrJmiEU0khITDvO6YksUpZMvJwibKFZrWSR-2Hb2t9KF2g69AiSkGtqivZ9UkDj-tH-iJ0Z4yKQrq0dBCebicMFTBu-qT3xRAMLIg41EaGnlnb-8OWzR8o0xmzsrWe755NQshylahgmlM5i_P-WSH3POXdaLpGRevfI7XzGQ",
@@ -13,27 +15,63 @@
     "repositories": {
       "title": "Scholarly Repositories",
       "links": [
-        { "name": "Google Scholar", "url": "#", "icon": "school" },
-        { "name": "DBLP Computer Science", "url": "#", "icon": "menu_book" },
-        { "name": "arXiv Preprints", "url": "#", "icon": "article" },
-        { "name": "GitHub Lab Repositories", "url": "#", "icon": "code" }
+        {
+          "name": "Google Scholar",
+          "url": "#",
+          "icon": "school"
+        },
+        {
+          "name": "DBLP Computer Science",
+          "url": "#",
+          "icon": "menu_book"
+        },
+        {
+          "name": "arXiv Preprints",
+          "url": "#",
+          "icon": "article"
+        },
+        {
+          "name": "GitHub Lab Repositories",
+          "url": "#",
+          "icon": "code"
+        }
       ]
     },
     "resources": {
       "title": "Academic Resources",
       "links": [
-        { "name": "Curriculum Vitae (PDF)", "url": "#", "icon": "description" },
-        { "name": "Colloquium & Seminar Schedule", "url": "#", "icon": "calendar_month" },
-        { "name": "Prospective Graduate Admissions", "url": "#", "icon": "group" },
-        { "name": "Ethics & Open Access Policy", "url": "#", "icon": "gavel" }
+        {
+          "name": "Curriculum Vitae (PDF)",
+          "url": "#",
+          "icon": "description"
+        },
+        {
+          "name": "Colloquium & Seminar Schedule",
+          "url": "#",
+          "icon": "calendar_month"
+        },
+        {
+          "name": "Prospective Graduate Admissions",
+          "url": "#",
+          "icon": "group"
+        },
+        {
+          "name": "Ethics & Open Access Policy",
+          "url": "#",
+          "icon": "gavel"
+        }
       ]
     },
     "location": {
       "title": "Location & Office",
-      "address": ["Gates Computer Science Building, Room 418", "353 Jane Stanford Way", "Stanford, CA 94305"],
-      "office_hours": "Office Hours: Tue/Thu 2:00 – 4:00 PM"
+      "address": [
+        "Gates Computer Science Building, Room 418",
+        "353 Jane Stanford Way",
+        "Stanford, CA 94305"
+      ],
+      "office_hours": "Office Hours: Tue/Thu 2:00 \u2013 4:00 PM"
     },
     "copyright": "Mansouri Academic Laboratory. Faculty of Engineering. Typeset in EB Garamond & Source Sans 3.",
-    "archival": "Archival Digital Repository • Volume MMXXV"
+    "archival": "Archival Digital Repository \u2022 Volume MMXXV"
   }
 }

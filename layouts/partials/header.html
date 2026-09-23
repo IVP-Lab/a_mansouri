@@ -3,7 +3,7 @@
     <div class="flex items-center lg:gap-space-lg xl:gap-16">
       <div class="flex items-center gap-space-md shrink-0">
         <a href="{{ "/" | relURL }}">
-          <img alt="{{ hugo.Data.site.header.title }} Logo" class="h-8 w-auto object-contain" src="{{ hugo.Data.site.header.logo_url }}">
+          {{ partial "logo.html" (dict "class" "h-9 w-auto") }}
         </a>
         <div class="hidden sm:flex flex-col">
           <span class="font-headline-sm text-headline-sm text-primary tracking-normal leading-tight">{{ hugo.Data.site.header.title }}</span>
